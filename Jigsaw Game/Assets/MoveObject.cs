@@ -39,7 +39,6 @@ public class MoveObject : MonoBehaviour
                 if (moveAllow)
                 {
                     transform.position = new Vector2(touchPosition.x, touchPosition.y);
-                    
                     //GetComponent<SpriteRenderer>().sortingLayerName = pieceLayer;
                 }
             }
@@ -57,7 +56,7 @@ public class MoveObject : MonoBehaviour
     {
         if (other.CompareTag("open"))
         {
-            Debug.Log("in the open space");
+            //Debug.Log("in the open space");
             if (other.name == gameObject.name)
             {
                 transform.position = other.transform.position;

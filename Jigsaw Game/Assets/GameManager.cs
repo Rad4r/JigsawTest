@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
     public Text remainingText;
     public int zIndex;
     public int piecesRemaining;
+    public GameObject UIpanel;
     void Start()
     {
         zIndex = 1;
@@ -24,8 +26,6 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        
-        
         if (piecesRemaining <= 0)
             GameWon();
         else
@@ -40,5 +40,15 @@ public class GameManager : MonoBehaviour
     void GameWon()
     {
         remainingText.text = "Congrats you won!";
+    }
+
+    public void OnRetryClick()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void OnContinueClick()
+    {
+        UIpanel.SetActive(false);
     }
 }
