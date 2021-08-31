@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -39,6 +40,21 @@ public class MoveObject : MonoBehaviour
             {
                 moveAllow = false;
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("open"))
+        {
+            Debug.Log("in the open space");
+            if (other.name == gameObject.name)
+            {
+                transform.position = other.transform.position;
+                Destroy(other);
+                GetComponent<MoveObject>().enabled = false;
+            }
+                
         }
     }
 }
