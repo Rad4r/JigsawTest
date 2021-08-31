@@ -2,14 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class MoveObject : MonoBehaviour
 {
-    bool moveAllow;
-    Collider2D col;
+    private GameManager GM;
+    private bool moveAllow;
+    private Collider2D col;
     // Start is called before the first frame update
     void Start()
     {
+        GM = FindObjectOfType<GameManager>();
         col = GetComponent<Collider2D>();
     }
 
@@ -27,6 +30,8 @@ public class MoveObject : MonoBehaviour
                 if(col == touchedCollider)
                 {
                     moveAllow = true;
+                    //GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    GetComponent<SortingGroup>().sortingOrder = GM.zIndex++;
                 }
             }
             if (touch.phase == TouchPhase.Moved)
@@ -34,11 +39,16 @@ public class MoveObject : MonoBehaviour
                 if (moveAllow)
                 {
                     transform.position = new Vector2(touchPosition.x, touchPosition.y);
+                    
+                    //GetComponent<SpriteRenderer>().sortingLayerName = pieceLayer;
                 }
             }
             if (touch.phase == TouchPhase.Ended)
             {
                 moveAllow = false;
+                //GetComponent<SpriteRenderer>().sortingOrder = 0;
+                //GetComponent<SortingGroup>().sortingOrder = 0;
+                //GetComponent<SpriteRenderer>().sortingOrder = 0;
             }
         }
     }
@@ -51,8 +61,10 @@ public class MoveObject : MonoBehaviour
             if (other.name == gameObject.name)
             {
                 transform.position = other.transform.position;
-                Destroy(other);
+                GM.piecesRemaining--;
                 GetComponent<MoveObject>().enabled = false;
+                GetComponent<SortingGroup>().sortingOrder = 0;
+                Destroy(other);
             }
                 
         }
