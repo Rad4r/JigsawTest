@@ -11,6 +11,7 @@ public class PauseClick : MonoBehaviour
     void Start()
     {
         GM = FindObjectOfType<GameManager>();
+        
     }
 
     // Update is called once per frame
