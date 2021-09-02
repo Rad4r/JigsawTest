@@ -19,7 +19,7 @@ public class PieceScript : MonoBehaviour
         GM = FindObjectOfType<GameManager>();
         sortGroup = GetComponent<SortingGroup>();
         correctPosition = transform.position;
-        transform.position = new Vector3(Random.Range(4.5f, 8f), Random.Range(-3.0f, 3.0f), 0);
+        //transform.position = new Vector3(Random.Range(4.5f, 8f), Random.Range(-3.0f, 3.0f), 0);
     }
 
     private void Update()

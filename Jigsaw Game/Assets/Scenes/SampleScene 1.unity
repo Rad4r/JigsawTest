@@ -1460,23 +1460,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c483a8709a55cec45bfd436234d11644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieces:
-  - {fileID: 1587501409}
-  - {fileID: 314960667}
-  - {fileID: 1758887998}
-  - {fileID: 243884291}
-  - {fileID: 1976420859}
-  - {fileID: 153742602}
-  - {fileID: 1979639324}
-  - {fileID: 929008731}
-  - {fileID: 344560293}
-  - {fileID: 1509498555}
-  - {fileID: 1710742528}
-  - {fileID: 1966423749}
-  - {fileID: 1954920389}
-  - {fileID: 115906740}
-  - {fileID: 611395455}
-  sideBar: {fileID: 782080365}
   remainingText: {fileID: 36102210}
   zIndex: 0
   piecesRemaining: 0
