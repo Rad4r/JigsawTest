@@ -20,7 +20,11 @@ public class JigsawGenerator : MonoBehaviour
 
     void GeneratePuzzle()
     {
-        //for (int i = 1; i <= 2; i++)
+        int horizontalIterations = Mathf.FloorToInt(horizontalPieces / 3); // important
+        int verticalIterations = Mathf.FloorToInt(verticlPieces / 1.5f);
+        //Need to figure out this calc
+        //need to find constant factor to distance the let and right
+        //maybe if statement for puzzles like 2x2
         
         //piece one
             Instantiate(jigsawPieces[0], startPoint , Quaternion.identity);
@@ -28,41 +32,37 @@ public class JigsawGenerator : MonoBehaviour
             Instantiate(jigsawPieces[0], startPoint + new Vector3(0.195f,(-6.43f/verticlPieces) * verticlPieces,0), Quaternion.Euler(0,0,90)); // 90z
             Instantiate(jigsawPieces[0], startPoint + new Vector3((6.62f/horizontalPieces) * horizontalPieces,(-6.24f/verticlPieces) * verticlPieces,0), Quaternion.Euler(0,0,180)); // 1800z
             
-            //0.62f
-        //piece two top (could sprite flip)
+        //top n Bottom
         Vector3 pieceTwoStart = startPoint + new Vector3(1.32f, 0.2f, 0);
-        Instantiate(jigsawPieces[1], pieceTwoStart, Quaternion.identity);
-        Instantiate(jigsawPieces[1], pieceTwoStart + new Vector3(2.66f,0,0), Quaternion.identity); //2.66 from each
-        
-        //piece three top
         Vector3 pieceThreeStart = startPoint + new Vector3(2.64f,0,0);
-        Instantiate(jigsawPieces[2], pieceThreeStart, Quaternion.Euler(0,0,-90));
-        Instantiate(jigsawPieces[2], pieceThreeStart + new Vector3(2.66f,0,0), Quaternion.Euler(0,0,-90));
+        Vector3 pieceThreeStartDown = startPoint + new Vector3(2.645f,0,0);
         
-        //piece DownFlip
-        Instantiate(jigsawPieces[1], pieceThreeStart + new Vector3(0.005f,(-6.44f/verticlPieces) * verticlPieces,0), Quaternion.identity).GetComponent<SpriteRenderer>().flipY = true;
-        Instantiate(jigsawPieces[1], pieceThreeStart + new Vector3(2.665f,(-6.44f/verticlPieces) * verticlPieces,0), Quaternion.identity).GetComponent<SpriteRenderer>().flipY = true; //2.66 from each
 
-        Instantiate(jigsawPieces[2], pieceTwoStart + new Vector3(0.005f,(-6.44f/verticlPieces) * verticlPieces,0), Quaternion.Euler(0,0,90)).GetComponent<SpriteRenderer>();
-        Instantiate(jigsawPieces[2], pieceTwoStart + new Vector3(2.66f,(-6.44f/verticlPieces) * verticlPieces ,0), Quaternion.Euler(0,0,90)).GetComponent<SpriteRenderer>();
+        for (int i = 0; i < horizontalIterations; i++)
+        {
+            Instantiate(jigsawPieces[1], pieceTwoStart + new Vector3(2.66f * i,0,0), Quaternion.identity);
+            Instantiate(jigsawPieces[2], pieceThreeStart + new Vector3(2.66f * i,0,0), Quaternion.Euler(0,0,-90));
+            Instantiate(jigsawPieces[1], pieceThreeStartDown + new Vector3(2.665f * i,(-6.44f/verticlPieces) * verticlPieces,0), Quaternion.identity).GetComponent<SpriteRenderer>().flipY = true;
+            Instantiate(jigsawPieces[2], pieceTwoStart + new Vector3(2.66f * i,(-6.44f/verticlPieces) * verticlPieces,0), Quaternion.Euler(0,0,90)).GetComponent<SpriteRenderer>();
+        }
         
-        //LeftSide
+        
+
+        //Left and Right Side
         Vector3 leftPieceTwo = startPoint + new Vector3(-0.01f, -2.45f,0);
         Vector3 leftPieceThree = startPoint + new Vector3(0.19f, -1.13f,0);
-        Instantiate(jigsawPieces[2], leftPieceThree, Quaternion.identity);
-        Instantiate(jigsawPieces[2], leftPieceThree + new Vector3(-0, -2.66f,0), Quaternion.identity);
+        //Vector3 invLeftPieceTwo = startPoint + new Vector3(0, -1.13f,0);
+        //Vector3 invLeftPieceThree = startPoint + new Vector3(0, -2.45f,0);
         
-        Instantiate(jigsawPieces[1], leftPieceTwo, Quaternion.Euler(0,0,90));
-        Instantiate(jigsawPieces[1], leftPieceTwo + new Vector3(-0, -2.66f,0), Quaternion.Euler(0,0,90));
         
-        //rightSide
-        Vector3 invLeftPieceTwo = startPoint + new Vector3(0, -1.13f,0);
-        Vector3 invLeftPieceThree = startPoint + new Vector3(0, -2.45f,0);
-        Instantiate(jigsawPieces[2], invLeftPieceThree + new Vector3((6.43f/horizontalPieces) * horizontalPieces,0,0), Quaternion.Euler(0,0,180));
-        Instantiate(jigsawPieces[2], invLeftPieceThree + new Vector3((6.43f/horizontalPieces) * horizontalPieces, -2.66f,0), Quaternion.Euler(0,0,180));
+        for (int i = 0; i < horizontalIterations; i++) //fix horizontal and vertical calc
+        {
+            Instantiate(jigsawPieces[2], leftPieceThree + new Vector3(-0, -2.66f * i,0), Quaternion.identity);
+            Instantiate(jigsawPieces[1], leftPieceTwo + new Vector3(-0, -2.66f * i,0), Quaternion.Euler(0,0,90));
+            Instantiate(jigsawPieces[2], leftPieceTwo + new Vector3(1.075f * horizontalPieces, -2.66f * i ,0), Quaternion.Euler(0,0,180)); //6.45
+            Instantiate(jigsawPieces[1], leftPieceThree + new Vector3(1.075f * horizontalPieces, -2.66f * i ,0), Quaternion.Euler(0,0,-90)); //6.45  need to fix the divisiion factor
+        }
         
-        Instantiate(jigsawPieces[1], invLeftPieceTwo + new Vector3((6.63f/horizontalPieces) * horizontalPieces,0,0), Quaternion.Euler(0,0,-90));
-        Instantiate(jigsawPieces[1], invLeftPieceTwo + new Vector3((6.63f/horizontalPieces) * horizontalPieces, -2.66f,0), Quaternion.Euler(0,0,-90));
         
         //Middle pieces
 
@@ -70,9 +70,7 @@ public class JigsawGenerator : MonoBehaviour
         Vector3 oddmidStart = startPoint + new Vector3(2.65f,-1.13f,0); //might need to adjust x
         Vector3 rotMidStart = startPoint + new Vector3(2.65f,-1.13f,0);
         Vector3 oddRotMidStart = startPoint + new Vector3(1.32f,-1.13f,0);
-        int horizontalIterations = Mathf.FloorToInt(horizontalPieces / 3);
-        int verticalIterations = Mathf.FloorToInt(verticlPieces / 1.5f);
-        
+
         for (int i = 0; i < verticalIterations; i++)
         {
             float yChange = -1.33f*i;
