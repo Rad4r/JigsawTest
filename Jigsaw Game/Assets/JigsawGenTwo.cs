@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class JigsawGenerator : MonoBehaviour
+public class JigsawGenTwo : MonoBehaviour
 {
     public GameObject[] jigsawPieces;
     public float horizontalPieces;

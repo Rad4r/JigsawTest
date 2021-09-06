@@ -8,8 +8,12 @@ public class GameManager : MonoBehaviour
     public int zIndex;
     public int piecesRemaining;
     public GameObject UIpanel;
+    public AudioClip pickupSound;
+    public AudioClip correctDropOffSound;
+    private AudioSource audi;
     void Start()
     {
+        audi = GetComponent<AudioSource>();
         zIndex = 1;
         piecesRemaining = 36;
     }
@@ -40,5 +44,14 @@ public class GameManager : MonoBehaviour
     public void OnContinueClick()
     {
         UIpanel.SetActive(false);
+    }
+
+    public void CorrectPieceSoundPlay()
+    {
+        //audi.PlayOneShot(correctDropOffSound);
+    }
+    public void PickUpSoundPlay()
+    {
+        //audi.PlayOneShot(pickupSound);
     }
 }

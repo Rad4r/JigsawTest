@@ -3530,6 +3530,8 @@ MonoBehaviour:
   zIndex: 0
   piecesRemaining: 0
   UIpanel: {fileID: 611048500}
+  pickupSound: {fileID: 8300000, guid: c2540211332c44a4984f4d6381a212d1, type: 3}
+  correctDropOffSound: {fileID: 8300000, guid: 9a91d75f33393044f8f598b260e5ce85, type: 3}
 --- !u!4 &341497536
 Transform:
   m_ObjectHideFlags: 0
@@ -3561,7 +3563,7 @@ MonoBehaviour:
   - {fileID: 6065009108264065997, guid: 55aa658343a5c2040be628f03afc7937, type: 3}
   - {fileID: 2296737070044352845, guid: ec28c09b6f5bf8941a79f634fddf0ff0, type: 3}
   - {fileID: 6530341549805267947, guid: 8fe1ce34c3fa8a340acd9d012c9a6f01, type: 3}
-  horizontalPieces: 6
+  horizontalPieces: 4
   verticlPieces: 6
 --- !u!1 &344560288
 GameObject:

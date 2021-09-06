@@ -37,6 +37,7 @@ public class PieceScript : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
+                GM.PickUpSoundPlay();
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if(GetComponent<Collider2D>() == touchedCollider)
                 {
@@ -57,6 +58,7 @@ public class PieceScript : MonoBehaviour
         {
             if (!positionSet)
             {
+                GM.CorrectPieceSoundPlay();
                 GM.piecesRemaining--;
                 positionSet = true;
             }
