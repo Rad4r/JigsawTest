@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour
     {
         audi = GetComponent<AudioSource>();
         zIndex = 1;
-        piecesRemaining = 36;
     }
 
     private void Update()
@@ -48,10 +47,10 @@ public class GameManager : MonoBehaviour
 
     public void CorrectPieceSoundPlay()
     {
-        //audi.PlayOneShot(correctDropOffSound);
+        audi.PlayOneShot(correctDropOffSound);
     }
     public void PickUpSoundPlay()
     {
-        //audi.PlayOneShot(pickupSound);
+        audi.PlayOneShot(pickupSound);
     }
 }

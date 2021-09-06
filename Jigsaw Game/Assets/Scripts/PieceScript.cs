@@ -19,7 +19,10 @@ public class PieceScript : MonoBehaviour
         GM = FindObjectOfType<GameManager>();
         sortGroup = GetComponent<SortingGroup>();
         correctPosition = transform.position;
-        //transform.position = new Vector3(Random.Range(4.5f, 8f), Random.Range(-3.0f, 3.0f), 0);
+        if(Random.Range(1,101) <50)
+            transform.position = new Vector3(Random.Range(4.5f, 8f), Random.Range(-3.0f, 3.0f), 0);
+        else
+            transform.position = new Vector3(Random.Range(-4.5f, -8f), Random.Range(-3.0f, 2.0f), 0);
     }
 
     private void Update()
@@ -37,12 +40,12 @@ public class PieceScript : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
-                GM.PickUpSoundPlay();
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if(GetComponent<Collider2D>() == touchedCollider)
                 {
                     movable = true;
                     sortGroup.sortingOrder = GM.zIndex++;
+                    GM.PickUpSoundPlay();
                 }
             }
             if (touch.phase == TouchPhase.Moved && movable)
