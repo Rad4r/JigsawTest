@@ -8,11 +8,15 @@ public class JigsawGenTwo : MonoBehaviour
     private Vector3 startPoint;
     private float pieceIncrement;
     private float scaleFactor;
-    private float scaleValue;
+    public float scaleValue;
 
     private void Start()
     {
-        scaleValue = jigsawPieces[0].transform.localScale.x;
+        for (int i = 0; i < jigsawPieces.Length; i++)
+        {
+            jigsawPieces[i].transform.localScale = new Vector3(scaleValue, scaleValue, 1);
+        }
+        //scaleValue = jigsawPieces[0].transform.localScale.x;
         scaleFactor = (2.66f / 0.78f) * scaleValue; // 2.0748 divide by scale
         Debug.Log(scaleFactor);
         Debug.Log(jigsawPieces[0].transform.localScale.x);
@@ -41,20 +45,20 @@ public class JigsawGenTwo : MonoBehaviour
         //top n Bottom
         Vector3 pieceTwoStart = startPoint + new Vector3(1.7f * scaleValue, 0.26f * scaleValue, 0);
         Vector3 pieceThreeStart = startPoint + new Vector3(3.39f * scaleValue,0,0);
-        Vector3 pieceThreeStartDown = startPoint + new Vector3(1.7f * scaleValue,0,0); //check  8f
+        //Vector3 pieceThreeStartDown = startPoint + new Vector3(1.7f * scaleValue,0,0); //check  8f
         
 
         for (int i = 0; i < horizontalIterations; i++) // need adjustments for 10+ blocks
         {
             Instantiate(jigsawPieces[1], pieceTwoStart + new Vector3(scaleFactor * i,0,0), Quaternion.identity);
             Instantiate(jigsawPieces[2], pieceThreeStart + new Vector3(scaleFactor * i,0,0), Quaternion.Euler(0,0,-90));
-            Instantiate(jigsawPieces[1], pieceThreeStartDown + new Vector3((scaleFactor + 0.005f) * i,-1.13f - verticleDistance,0), Quaternion.identity).GetComponent<SpriteRenderer>().flipY = true;
-            Instantiate(jigsawPieces[2], pieceTwoStart + new Vector3(scaleFactor * i,-1.13f - verticleDistance,0), Quaternion.Euler(0,0,90)).GetComponent<SpriteRenderer>();
+            Instantiate(jigsawPieces[1], pieceThreeStart + new Vector3(scaleFactor * i + 0.01f,-1.44f * scaleValue - verticleDistance,0), Quaternion.identity).GetComponent<SpriteRenderer>().flipY = true;
+            Instantiate(jigsawPieces[2], pieceTwoStart + new Vector3(scaleFactor * i,-1.44f * scaleValue - verticleDistance,0), Quaternion.Euler(0,0,90)).GetComponent<SpriteRenderer>();
         }
 
         //Left and Right Side
-        Vector3 leftPieceTwo = startPoint + new Vector3(-0.01f, -2.45f,0);
-        Vector3 leftPieceThree = startPoint + new Vector3(0.19f, -1.13f,0);
+        Vector3 leftPieceTwo = startPoint + new Vector3(-0.01f * scaleValue, -3.14f * scaleValue,0);
+        Vector3 leftPieceThree = startPoint + new Vector3(0.24f * scaleValue, -1.45f * scaleValue,0);
         Debug.Log(horizontalDistance);
         
         
@@ -62,17 +66,17 @@ public class JigsawGenTwo : MonoBehaviour
         {
             Instantiate(jigsawPieces[2], leftPieceThree + new Vector3(-0, -scaleFactor * i,0), Quaternion.identity);
             Instantiate(jigsawPieces[1], leftPieceTwo + new Vector3(-0, -scaleFactor * i,0), Quaternion.Euler(0,0,90));
-            Instantiate(jigsawPieces[2], leftPieceTwo + new Vector3(1.13f + horizontalDistance , -scaleFactor * i ,0), Quaternion.Euler(0,0,180)); //6.45
-            Instantiate(jigsawPieces[1], leftPieceThree + new Vector3(1.13f + horizontalDistance , -scaleFactor * i ,0), Quaternion.Euler(0,0,-90)); //6.45  need to fix the divisiion factor
+            Instantiate(jigsawPieces[2], leftPieceTwo + new Vector3(1.44f *  scaleValue + horizontalDistance , -scaleFactor * i ,0), Quaternion.Euler(0,0,180)); //6.45
+            Instantiate(jigsawPieces[1], leftPieceThree + new Vector3(1.44f * scaleValue + horizontalDistance , -scaleFactor * i ,0), Quaternion.Euler(0,0,-90)); //6.45  need to fix the divisiion factor
         } // could be part of the other grid
         
 
-        Vector3 midStart = startPoint + new Vector3(1.32f,-1.13f,0);
-        Vector3 oddmidStart = startPoint + new Vector3(2.65f,-1.13f,0); //might need to adjust x
+        Vector3 midStart = startPoint + new Vector3(1.69f * scaleValue,-1.45f * scaleValue,0);
+        Vector3 oddmidStart = startPoint + new Vector3(3.4f * scaleValue,-1.45f * scaleValue,0); //might need to adjust x
 
         for (int i = 0; i < verticalIterations *2; i++) // need adjustments for 10+ blocks
         {
-            float yChange = -1.33f*i;
+            float yChange = -scaleFactor/2 *i;
 
             if (i % 2 == 0)
             {
@@ -83,14 +87,6 @@ public class JigsawGenTwo : MonoBehaviour
                 }
                     
             }
-            else if (i == verticalIterations-1)
-            {
-                for (int j = 0; j < horizontalIterations; j++)
-                {
-                    Instantiate(jigsawPieces[3], oddmidStart + new Vector3(scaleFactor * j - 0.005f, yChange, 0), Quaternion.identity);
-                    Instantiate(jigsawPieces[3], midStart + new Vector3(scaleFactor * j - 0.005f, yChange, 0), Quaternion.Euler(0, 0, 90));
-                }
-            }
             else
             {
                 for (int j = 0; j < horizontalIterations; j++)
@@ -99,6 +95,15 @@ public class JigsawGenTwo : MonoBehaviour
                     Instantiate(jigsawPieces[3], midStart + new Vector3(scaleFactor * j, yChange, 0), Quaternion.Euler(0, 0, 90));
                 }
             }
+            // else if (i == verticalIterations-1)
+            // {
+            //     for (int j = 0; j < horizontalIterations; j++)
+            //     {
+            //         Instantiate(jigsawPieces[3], oddmidStart + new Vector3(scaleFactor * j - 0.005f, yChange, 0), Quaternion.identity);
+            //         Instantiate(jigsawPieces[3], midStart + new Vector3(scaleFactor * j - 0.005f, yChange, 0), Quaternion.Euler(0, 0, 90));
+            //     }
+            // }
+            
         }
         
         
