@@ -12,7 +12,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/Desktop/Jigsaw Game/comments.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/JigsawGenerator2.0.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xU2n9bvWuHOaIrTu1wZyYbWUmB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -67,6 +66,8 @@
       <workItem from="1630666985592" duration="3266000" />
       <workItem from="1630673933240" duration="6948000" />
       <workItem from="1630909643316" duration="2223000" />
+      <workItem from="1630914544640" duration="1418000" />
+      <workItem from="1630923088333" duration="4929000" />
     </task>
     <servers />
   </component>
