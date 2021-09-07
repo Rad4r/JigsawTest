@@ -44,6 +44,11 @@ public class GameManager : MonoBehaviour
     {
         UIpanel.SetActive(false);
     }
+    
+    public void OnBackClick()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 
     public void CorrectPieceSoundPlay()
     {
