@@ -20,9 +20,9 @@ public class PieceScript : MonoBehaviour
         sortGroup = GetComponent<SortingGroup>();
         correctPosition = transform.position;
         if(Random.Range(1,101) <50)
-            transform.position = new Vector3(Random.Range(4.5f, 8f), Random.Range(-3.0f, 3.0f), 0);
+            transform.position = new Vector3(Random.Range(4.5f, 6f), Random.Range(-3.0f, 3.0f), 0);
         else
-            transform.position = new Vector3(Random.Range(-4.5f, -8f), Random.Range(-3.0f, 2.0f), 0);
+            transform.position = new Vector3(Random.Range(-4.5f, -6f), Random.Range(-3.0f, 2.0f), 0);
     }
 
     private void Update()
@@ -63,6 +63,8 @@ public class PieceScript : MonoBehaviour
             {
                 GM.CorrectPieceSoundPlay();
                 GM.piecesRemaining--;
+                sortGroup.sortingOrder = 0;
+                GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
                 positionSet = true;
             }
             

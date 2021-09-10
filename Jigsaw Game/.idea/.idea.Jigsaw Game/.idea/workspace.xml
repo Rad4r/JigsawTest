@@ -10,9 +10,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/Desktop/Jigsaw Game/comments.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="ProjectId" id="1xU2n9bvWuHOaIrTu1wZyYbWUmB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -69,6 +66,9 @@
       <workItem from="1630914544640" duration="1418000" />
       <workItem from="1630923088333" duration="4929000" />
       <workItem from="1631000148735" duration="4263000" />
+      <workItem from="1631020575081" duration="892000" />
+      <workItem from="1631196195458" duration="3257000" />
+      <workItem from="1631265112869" duration="6564000" />
     </task>
     <servers />
   </component>
