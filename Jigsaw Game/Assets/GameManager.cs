@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
             for (int i = 0; i < unwantedObjects.Length; i++)
                 unwantedObjects[i].SetActive(false);
             completedPuzzle.SetActive(true);
-            Invoke("OpenWinUI", 0.5f);
+            Invoke("OpenWinUI", 0.2f);
             
         }
     }
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
     {
         remainingText.color = new Color(250, 170, 0); // could change y to -15 for ipmax
         winPanel.SetActive(true);
-        winPanel.transform.localScale = Vector3.Lerp(winPanel.transform.localScale, new Vector3(1, 1, 1), 0.015f);
+        winPanel.transform.localScale = Vector3.Lerp(winPanel.transform.localScale, new Vector3(1, 1, 1), Time.deltaTime * 2);
     }
 
     public void OnPauseClick()
