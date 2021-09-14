@@ -1,10 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.Rendering;
+using Rewired;
 
 public class PieceScript : MonoBehaviour
 {
@@ -13,22 +10,47 @@ public class PieceScript : MonoBehaviour
     private GameManager GM;
     private Vector3 correctPosition;
     private SortingGroup sortGroup;
+    private Player player;
 
     private void Start()
     {
+        // sorting group set
+        player = ReInput.players.GetPlayer(0);
         GM = FindObjectOfType<GameManager>();
         sortGroup = GetComponent<SortingGroup>();
         correctPosition = transform.position;
-        if(Random.Range(1,101) <50)
-            transform.position = new Vector3(Random.Range(4.5f, 6f), Random.Range(-3.0f, 3.0f), 0);
+        if (Random.Range(1, 101) < 50)
+        {
+            transform.position = new Vector3(Random.Range(5f, 8f), Random.Range(-3.0f, 3.0f), GM.zIndex);
+            GetComponent<SortingGroup>().sortingOrder = GM.zIndex;
+        }
+
         else
-            transform.position = new Vector3(Random.Range(-4.5f, -6f), Random.Range(-3.0f, 2.0f), 0);
+        {
+            transform.position = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
+            GetComponent<SortingGroup>().sortingOrder = GM.zIndex;
+        }
+            
+        GM.zIndex++;
     }
 
     private void Update()
     {
         Invoke("PositionCheck",1f);
-        TouchMove();
+        //TouchMove();
+        //RewiredMove();
+    }
+
+    private void RewiredMove()
+    {
+        if (player.GetAxis("Drag Horizontal") == 0f && player.GetAxis("Drag Vertical") == 0f)
+        {
+            //fwafa
+            if (player.GetButtonDown("TouchClick"))
+            {
+                
+            }
+        }
     }
 
     private void TouchMove()
@@ -61,6 +83,7 @@ public class PieceScript : MonoBehaviour
         {
             if (!positionSet)
             {
+                tag = "ClosedPiece";
                 GM.CorrectPieceSoundPlay();
                 GM.piecesRemaining--;
                 sortGroup.sortingOrder = 0;
