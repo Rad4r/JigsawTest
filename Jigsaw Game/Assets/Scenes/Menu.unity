@@ -857,7 +857,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca1122763da38c94b8375635418df456, type: 2}
+  - {fileID: 2100000, guid: 1121a296a11485244a11a8bd86d25268, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -878,7 +878,7 @@ SpriteRenderer:
   m_SortingLayerID: -1093131907
   m_SortingLayer: 2
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: e21a0c438c2bc1c41916ab71cec63e42, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e0cb7e7dc5f5a54ab9e388c6b9b5999, type: 3}
   m_Color: {r: 0.6981132, g: 0.0355642, b: 0.04801745, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -896,13 +896,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993777213}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: -1.26, y: -4.44, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &1377454551
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,12 +6,12 @@ using UnityEngine.Rendering;
 public class PointerRemote : MonoBehaviour
 {
     public float pointerSpeed;
-    public GameObject pausePanel;
     private GameManager GM;
     private Player player;
     private Rigidbody2D rb;
     private GameObject currentObject;
     private bool holdingObject;
+    private bool menuActive;
     void Start()
     {
         GM = FindObjectOfType<GameManager>();
@@ -21,18 +21,23 @@ public class PointerRemote : MonoBehaviour
 
     private void Update()
     {
-        MovePointer();
-
         Collider2D[] nearbyObjects = Physics2D.OverlapPointAll(transform.position);
 
+        if (GM.winPanel.activeSelf || GM.UIpanel.activeSelf)
+            menuActive = true;
+        else
+            menuActive = false;
+        
         if (player.GetButtonDown("Menu Button"))
         {
-            if(pausePanel.activeSelf)
-                pausePanel.SetActive(false);
+            if(GM.UIpanel.activeSelf)
+                GM.UIpanel.SetActive(false);
             else
-                pausePanel.SetActive(true);
+                GM.UIpanel.SetActive(true);
         }
-            
+        
+        if(!menuActive)
+            MovePointer();
 
         if (nearbyObjects.Length >= 1 && !holdingObject && player.GetButtonDown("Touch Click") && ClosestObject(nearbyObjects).CompareTag("OpenPiece"))
         {

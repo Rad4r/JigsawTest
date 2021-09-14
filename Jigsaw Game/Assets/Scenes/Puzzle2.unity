@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 11858582}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (5)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,7 +188,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.013101459, y: 0}
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 13811320}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (1)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -396,7 +396,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.24403074, y: 0}
@@ -717,7 +717,7 @@ GameObject:
   - component: {fileID: 42240191}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (11)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -765,7 +765,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -925,7 +925,7 @@ GameObject:
   - component: {fileID: 55130877}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (8)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -973,7 +973,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -1461,7 +1461,7 @@ GameObject:
   - component: {fileID: 261471194}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (3)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1509,7 +1509,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.24403074, y: 0}
@@ -1669,7 +1669,7 @@ GameObject:
   - component: {fileID: 274578939}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (5)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1717,7 +1717,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -1871,6 +1871,7 @@ GameObject:
   - component: {fileID: 340036471}
   - component: {fileID: 340036470}
   - component: {fileID: 340036469}
+  - component: {fileID: 340036472}
   m_Layer: 5
   m_Name: winPanel
   m_TagString: Untagged
@@ -1938,6 +1939,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &340036472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340036468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c25abc3d831904ab98081e72d78626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 1595834926}
+  - {fileID: 1979740700}
+  - {fileID: 936858619}
 --- !u!1 &341497534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,6 +2110,63 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &344304857
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5804050005106347705, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804050005106347705, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804050005106347705, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804050005106347705, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804050005106347705, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804050005106347705, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804050005106347705, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804050005106347705, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804050005106347705, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804050005106347705, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804050005106347705, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804050005106347711, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
+      propertyPath: m_Name
+      value: Rewired Input Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
 --- !u!1 &385681051
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,7 +2348,7 @@ GameObject:
   - component: {fileID: 421244426}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (2)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2322,7 +2396,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -7508,7 +7582,7 @@ GameObject:
   - component: {fileID: 487933416}
   m_Layer: 0
   m_Name: Pieces_1(Clone)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7556,7 +7630,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.25623792}
@@ -7716,7 +7790,7 @@ GameObject:
   - component: {fileID: 496182384}
   m_Layer: 0
   m_Name: Pieces_4(Clone)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7764,7 +7838,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -8117,6 +8191,7 @@ GameObject:
   - component: {fileID: 598882885}
   - component: {fileID: 598882884}
   - component: {fileID: 598882883}
+  - component: {fileID: 598882886}
   m_Layer: 5
   m_Name: Retry
   m_TagString: Untagged
@@ -8164,7 +8239,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.98039216, g: 0.9607843, b: 0.84705883, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.5754717, g: 0.3350502, b: 0.12703808, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -8237,6 +8312,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598882881}
   m_CullTransparentMesh: 1
+--- !u!95 &598882886
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598882881}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7c2d2bdf65685047938818eac4d5b84, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &622578694
 GameObject:
   m_ObjectHideFlags: 0
@@ -8418,7 +8512,7 @@ GameObject:
   - component: {fileID: 631009531}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (10)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8466,7 +8560,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -8626,7 +8720,7 @@ GameObject:
   - component: {fileID: 648768173}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (6)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8674,7 +8768,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -8834,7 +8928,7 @@ GameObject:
   - component: {fileID: 661755502}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (14)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8882,7 +8976,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -9124,7 +9218,7 @@ GameObject:
   - component: {fileID: 672089815}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (7)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9172,7 +9266,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -9415,7 +9509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &700649800
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9623,6 +9717,7 @@ GameObject:
   - component: {fileID: 846218447}
   - component: {fileID: 846218446}
   - component: {fileID: 846218445}
+  - component: {fileID: 846218448}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -9670,7 +9765,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.98039216, g: 0.9607843, b: 0.84705883, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.5754717, g: 0.3350502, b: 0.12703808, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -9743,6 +9838,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846218443}
   m_CullTransparentMesh: 1
+--- !u!95 &846218448
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846218443}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7c2d2bdf65685047938818eac4d5b84, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &873559856
 GameObject:
   m_ObjectHideFlags: 0
@@ -9760,7 +9874,7 @@ GameObject:
   - component: {fileID: 873559857}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (7)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9808,7 +9922,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.013101459, y: 0}
@@ -10045,6 +10159,7 @@ GameObject:
   - component: {fileID: 936858621}
   - component: {fileID: 936858620}
   - component: {fileID: 936858619}
+  - component: {fileID: 936858622}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -10092,7 +10207,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.98039216, g: 0.9607843, b: 0.84705883, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.5754717, g: 0.3350502, b: 0.12703808, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -10165,6 +10280,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936858617}
   m_CullTransparentMesh: 1
+--- !u!95 &936858622
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936858617}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7c2d2bdf65685047938818eac4d5b84, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1002819271
 GameObject:
   m_ObjectHideFlags: 0
@@ -10182,7 +10316,7 @@ GameObject:
   - component: {fileID: 1002819272}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (3)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10230,7 +10364,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.013101459, y: 0}
@@ -10390,7 +10524,7 @@ GameObject:
   - component: {fileID: 1025539614}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (15)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10438,7 +10572,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -10680,7 +10814,7 @@ GameObject:
   - component: {fileID: 1086136667}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (4)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10728,7 +10862,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.24403074, y: 0}
@@ -10888,7 +11022,7 @@ GameObject:
   - component: {fileID: 1090130501}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (3)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10936,7 +11070,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -11096,7 +11230,7 @@ GameObject:
   - component: {fileID: 1091057739}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (6)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11144,7 +11278,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.013101459, y: 0}
@@ -11878,7 +12012,7 @@ GameObject:
   - component: {fileID: 1273235502}
   m_Layer: 0
   m_Name: Pieces_3(Clone)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11926,7 +12060,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.24403074, y: 0}
@@ -12086,7 +12220,7 @@ GameObject:
   - component: {fileID: 1310498186}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (13)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12134,7 +12268,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -12540,7 +12674,7 @@ GameObject:
   - component: {fileID: 1377603282}
   m_Layer: 0
   m_Name: Pieces_1(Clone) (3)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12588,7 +12722,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.25623792}
@@ -12743,6 +12877,7 @@ GameObject:
   - component: {fileID: 1427296846}
   - component: {fileID: 1427296845}
   - component: {fileID: 1427296844}
+  - component: {fileID: 1427296847}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -12790,7 +12925,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.98039216, g: 0.9607843, b: 0.84705883, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.5754717, g: 0.3350502, b: 0.12703808, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -12863,6 +12998,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427296842}
   m_CullTransparentMesh: 1
+--- !u!95 &1427296847
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427296842}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7c2d2bdf65685047938818eac4d5b84, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1439700376
 GameObject:
   m_ObjectHideFlags: 0
@@ -13028,7 +13182,7 @@ GameObject:
   - component: {fileID: 1507823133}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (2)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13076,7 +13230,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.24403074, y: 0}
@@ -13236,7 +13390,7 @@ GameObject:
   - component: {fileID: 1562514800}
   m_Layer: 0
   m_Name: Pieces_1(Clone) (2)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13284,7 +13438,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.25623792}
@@ -13505,6 +13659,7 @@ GameObject:
   - component: {fileID: 1595834928}
   - component: {fileID: 1595834927}
   - component: {fileID: 1595834926}
+  - component: {fileID: 1595834929}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -13552,7 +13707,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.98039216, g: 0.9607843, b: 0.84705883, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.5754717, g: 0.3350502, b: 0.12703808, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -13625,6 +13780,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595834924}
   m_CullTransparentMesh: 1
+--- !u!95 &1595834929
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595834924}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7c2d2bdf65685047938818eac4d5b84, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1620270728
 GameObject:
   m_ObjectHideFlags: 0
@@ -13724,7 +13898,7 @@ GameObject:
   - component: {fileID: 1645709496}
   m_Layer: 0
   m_Name: Pieces_1(Clone) (1)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13772,7 +13946,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.25623792}
@@ -14128,7 +14302,7 @@ GameObject:
   - component: {fileID: 1783637319}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (7)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14176,7 +14350,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.24403074, y: 0}
@@ -14336,7 +14510,7 @@ GameObject:
   - component: {fileID: 1789806122}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (6)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14384,7 +14558,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.24403074, y: 0}
@@ -14544,7 +14718,7 @@ GameObject:
   - component: {fileID: 1812798952}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (12)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14592,7 +14766,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -14752,7 +14926,7 @@ GameObject:
   - component: {fileID: 1816010377}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (1)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14800,7 +14974,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -15042,7 +15216,7 @@ GameObject:
   - component: {fileID: 1874015632}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (2)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15090,7 +15264,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.013101459, y: 0}
@@ -15250,7 +15424,7 @@ GameObject:
   - component: {fileID: 1902494667}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (4)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15298,7 +15472,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.013101459, y: 0}
@@ -15561,7 +15735,7 @@ GameObject:
   - component: {fileID: 1919067132}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (9)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15609,7 +15783,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -15763,6 +15937,7 @@ GameObject:
   - component: {fileID: 1935487625}
   - component: {fileID: 1935487627}
   - component: {fileID: 1935487626}
+  - component: {fileID: 1935487628}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -15830,6 +16005,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935487624}
   m_CullTransparentMesh: 1
+--- !u!114 &1935487628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935487624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c25abc3d831904ab98081e72d78626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 846218445}
+  - {fileID: 598882883}
+  - {fileID: 1427296844}
 --- !u!1 &1936328072
 GameObject:
   m_ObjectHideFlags: 0
@@ -16011,7 +16202,7 @@ GameObject:
   - component: {fileID: 1948636797}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (1)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16059,7 +16250,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.013101459, y: 0}
@@ -16219,7 +16410,7 @@ GameObject:
   - component: {fileID: 1951715308}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (4)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16267,7 +16458,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.004181683}
@@ -16427,7 +16618,7 @@ GameObject:
   - component: {fileID: 1963286747}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (5)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16475,7 +16666,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.24403074, y: 0}
@@ -16630,6 +16821,7 @@ GameObject:
   - component: {fileID: 1979740702}
   - component: {fileID: 1979740701}
   - component: {fileID: 1979740700}
+  - component: {fileID: 1979740703}
   m_Layer: 5
   m_Name: Replay
   m_TagString: Untagged
@@ -16677,7 +16869,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.98039216, g: 0.9607843, b: 0.84705883, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.5754717, g: 0.3350502, b: 0.12703808, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -16750,6 +16942,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979740698}
   m_CullTransparentMesh: 1
+--- !u!95 &1979740703
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979740698}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7c2d2bdf65685047938818eac4d5b84, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2006213483
 GameObject:
   m_ObjectHideFlags: 0
@@ -16931,7 +17142,7 @@ GameObject:
   - component: {fileID: 2016234487}
   m_Layer: 0
   m_Name: Pieces_2(Clone)
-  m_TagString: Untagged
+  m_TagString: OpenPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16979,7 +17190,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.013101459, y: 0}
@@ -17121,6 +17332,124 @@ Transform:
   - {fileID: 1341536095}
   m_Father: {fileID: 1588074529}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2026000604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2026000608}
+  - component: {fileID: 2026000607}
+  - component: {fileID: 2026000606}
+  - component: {fileID: 2026000605}
+  m_Layer: 0
+  m_Name: Pointer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!50 &2026000605
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026000604}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &2026000606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026000604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde4448c83fe2fd40a90d657f2d9885d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointerSpeed: 50
+--- !u!212 &2026000607
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026000604}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 262276881
+  m_SortingLayer: 1
+  m_SortingOrder: 30
+  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Color: {r: 1, g: 0.09402679, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &2026000608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026000604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2034875456
 GameObject:

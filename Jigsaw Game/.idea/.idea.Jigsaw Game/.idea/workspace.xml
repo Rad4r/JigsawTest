@@ -22,6 +22,7 @@
     <setting file="file://D:/bakka/Desk/GD/Block 3/Development Elective/unity stuff/CLASS/AI CHASE TEST/Assets/EnemyEvasion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PointerRemote.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/bakka/Desk/GD/Block 3/Development Elective/unity stuff/CLASS/AI CHASE TEST/Assets/PlayerChase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ButtonChangePause.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xU2n9bvWuHOaIrTu1wZyYbWUmB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -84,7 +85,7 @@
       <workItem from="1631265112869" duration="7265000" />
       <workItem from="1631516865676" duration="16269000" />
       <workItem from="1631538526160" duration="7091000" />
-      <workItem from="1631605955461" duration="5919000" />
+      <workItem from="1631605955461" duration="13651000" />
     </task>
     <servers />
   </component>

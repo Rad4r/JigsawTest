@@ -1,14 +1,10 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Rewired;
-using UnityEditor.Rendering.LookDev;
 
-public class ButtonChange : MonoBehaviour
+public class ButtonChangePause : MonoBehaviour
 {
-    public GameObject arrow;
     public Button[] buttons;
     private List<Vector3> defaultScales;
     private Player player;
@@ -24,20 +20,20 @@ public class ButtonChange : MonoBehaviour
         player = ReInput.players.GetPlayer(0);
         Debug.Log(buttons[currentButton].name);
         buttonReset = true;
-        
         defaultScales = new List<Vector3>();
-        
+
         for (int i = 0; i < buttons.Length; i++)
         {
             defaultScales.Add(buttons[i].transform.localScale);
         }
+
         UpdateUI();
     }
 
     private void Update()
     {
         Invoke("ButtonClickCheck",0.5f);
-        
+
         if (buttonReset)
         {
             if (player.GetAxis("Drag Horizontal") < -maxButtonChangeAxisLimit)
@@ -50,7 +46,7 @@ public class ButtonChange : MonoBehaviour
                 Invoke("ResetButton", buttonChangeDelay);
                 UpdateUI();
             }
-            else if(player.GetAxis("Drag Horizontal") > maxButtonChangeAxisLimit)
+            else if (player.GetAxis("Drag Horizontal") > maxButtonChangeAxisLimit)
             {
                 if (currentButton >= buttons.Length - 1)
                     currentButton = 0;
@@ -61,22 +57,26 @@ public class ButtonChange : MonoBehaviour
                 UpdateUI();
             }
         }
+
         //Debug.Log("Axis Speed: " + player.GetAxis("Drag Horizontal"));
         Debug.Log("Current Button: " + currentButton);
     }
 
     private void UpdateUI()
     {
-        RectTransform ret = (RectTransform) buttons[currentButton].transform;
-        Vector3 newVector = Camera.main.ScreenToWorldPoint(new Vector3(0, ret.rect.height, 0)) + Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-        arrow.transform.position = buttons[currentButton].transform.position + newVector + new Vector3(0,1f, 0);
-        
         buttons[currentButton].transform.localScale *= 1.2f;
+        buttons[currentButton].GetComponent<Animator>().enabled = true;
+        buttons[currentButton].image.color = Color.yellow;
 
         for (int i = 0; i < buttons.Length; i++)
         {
-            if(i != currentButton)
+            var color = buttons[i].GetComponent<Button>().colors;
+            if (i != currentButton)
+            {
                 buttons[i].transform.localScale = defaultScales[i];
+                buttons[i].image.color = Color.white;
+                buttons[i].GetComponent<Animator>().enabled = false; //Animation Reset
+            }
         }
     }
 
@@ -85,7 +85,7 @@ public class ButtonChange : MonoBehaviour
         buttonReset = true;
     }
 
-    void ButtonClickCheck()
+    private void ButtonClickCheck()
     {
         if (player.GetButton("Touch Click"))
         {
