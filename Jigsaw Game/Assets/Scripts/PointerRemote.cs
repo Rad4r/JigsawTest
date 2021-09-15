@@ -2,6 +2,7 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 using Rewired;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class PointerRemote : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PointerRemote : MonoBehaviour
     private Player player;
     private Rigidbody2D rb;
     private GameObject currentObject;
+    //private Collider2D[] nearbyObjects;
     private bool holdingObject;
     private bool menuActive;
     void Start()
@@ -27,31 +29,31 @@ public class PointerRemote : MonoBehaviour
             menuActive = true;
         else
             menuActive = false;
-        
-        if (player.GetButtonDown("Menu Button"))
-        {
-            if(GM.UIpanel.activeSelf)
-                GM.UIpanel.SetActive(false);
-            else
-                GM.UIpanel.SetActive(true);
-        }
-        
+
         if(!menuActive)
             MovePointer();
 
-        if (nearbyObjects.Length >= 1 && !holdingObject && player.GetButtonDown("Touch Click") && ClosestObject(nearbyObjects).CompareTag("OpenPiece"))
+        if (nearbyObjects.Length >= 1 && !holdingObject && player.GetButtonDown("Touch Click"))
         {
-            GetComponent<SpriteRenderer>().enabled = false;
-            currentObject = ClosestObject(nearbyObjects).gameObject;
-            currentObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
-            currentObject.GetComponent<SortingGroup>().sortingOrder = GM.zIndex++;
-            GM.PickUpSoundPlay();
-            holdingObject = true;
+            if (ClosestObject(nearbyObjects).CompareTag("OpenPiece"))
+            {
+                GetComponent<SpriteRenderer>().enabled = false;
+                currentObject = ClosestObject(nearbyObjects).gameObject;
+                currentObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
+                currentObject.GetComponent<SortingGroup>().sortingOrder = GM.zIndex++;
+                GM.PickUpSoundPlay();
+                holdingObject = true;
+            }
+            else if (ClosestObject(nearbyObjects).CompareTag("Pause"))
+            {
+                ClosestObject(nearbyObjects).GetComponent<Button>().onClick.Invoke();
+            }
+            
         }
-        
+
         if (holdingObject)
         {
-            if (player.GetButtonDown("Back Button"))
+            if (player.GetButtonDown("Back Button") || player.GetButtonDown("Menu Button"))
             {
                 GetComponent<SpriteRenderer>().enabled = true;
                 currentObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 110);
@@ -66,6 +68,17 @@ public class PointerRemote : MonoBehaviour
                 GetComponent<SpriteRenderer>().enabled = true;
             }
         }
+        else
+        {
+            if (player.GetButtonDown("Back Button") || player.GetButtonDown("Menu Button"))
+            {
+                if(GM.UIpanel.activeSelf)
+                    GM.UIpanel.SetActive(false);
+                else
+                    GM.UIpanel.SetActive(true);
+            }
+        }
+        
     }
 
     private void MovePointer()
@@ -78,6 +91,8 @@ public class PointerRemote : MonoBehaviour
         
         transform.position = clampedPosition ;
         rb.MovePosition(  transform.position + direction*Time.deltaTime*pointerSpeed); //maybe problem fix needed auto move
+        
+        //if()
     }
 
     private Collider2D ClosestObject(Collider2D[] collisionList)
@@ -106,5 +121,4 @@ public class PointerRemote : MonoBehaviour
         else
             obj.transform.position = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
     }
-
 }

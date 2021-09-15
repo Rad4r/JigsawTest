@@ -17,17 +17,13 @@ public class ButtonChange : MonoBehaviour
     private void Start()
     {
         buttonChangeDelay = 0.2f; // could change
-        maxButtonChangeAxisLimit = 0.9f;
+        maxButtonChangeAxisLimit = 0.4f;
         player = ReInput.players.GetPlayer(0);
         Debug.Log(buttons[currentButton].name);
         buttonReset = true;
-        
         defaultScales = new List<Vector3>();
-        
         for (int i = 0; i < buttons.Length; i++)
-        {
             defaultScales.Add(buttons[i].transform.localScale);
-        }
         UpdateUI();
     }
 
@@ -44,6 +40,7 @@ public class ButtonChange : MonoBehaviour
                 else
                     currentButton--;
                 buttonReset = false;
+                GetComponent<AudioSource>().Play();
                 Invoke("ResetButton", buttonChangeDelay);
                 UpdateUI();
             }
@@ -54,12 +51,11 @@ public class ButtonChange : MonoBehaviour
                 else
                     currentButton++;
                 buttonReset = false;
+                GetComponent<AudioSource>().Play();
                 Invoke("ResetButton", buttonChangeDelay);
                 UpdateUI();
             }
         }
-        //Debug.Log("Axis Speed: " + player.GetAxis("Drag Horizontal"));
-        Debug.Log("Current Button: " + currentButton);
     }
 
     private void UpdateUI()

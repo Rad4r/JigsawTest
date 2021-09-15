@@ -83,7 +83,9 @@ public class GameManager : MonoBehaviour
     public void OnContinueClick()
     {
         UIpanel.SetActive(false);
-        PickUpSoundPlay();
+        if (!audi.isPlaying)
+            PickUpSoundPlay();
+        
     }
     
     public void OnBackClick()

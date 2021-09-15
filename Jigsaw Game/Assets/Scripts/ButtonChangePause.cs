@@ -6,6 +6,7 @@ using Rewired;
 public class ButtonChangePause : MonoBehaviour
 {
     public Button[] buttons;
+    private GameManager GM;
     private List<Vector3> defaultScales;
     private Player player;
     private int currentButton;
@@ -15,8 +16,9 @@ public class ButtonChangePause : MonoBehaviour
 
     private void Start()
     {
-        buttonChangeDelay = 0.2f; // could change
-        maxButtonChangeAxisLimit = 0.9f;
+        GM = FindObjectOfType<GameManager>();
+        buttonChangeDelay = 0.4f; // could change
+        maxButtonChangeAxisLimit = 0.1f;
         player = ReInput.players.GetPlayer(0);
         Debug.Log(buttons[currentButton].name);
         buttonReset = true;
@@ -43,6 +45,7 @@ public class ButtonChangePause : MonoBehaviour
                 else
                     currentButton--;
                 buttonReset = false;
+                GM.PickUpSoundPlay();
                 Invoke("ResetButton", buttonChangeDelay);
                 UpdateUI();
             }
@@ -53,13 +56,11 @@ public class ButtonChangePause : MonoBehaviour
                 else
                     currentButton++;
                 buttonReset = false;
+                GM.PickUpSoundPlay();
                 Invoke("ResetButton", buttonChangeDelay);
                 UpdateUI();
             }
         }
-
-        //Debug.Log("Axis Speed: " + player.GetAxis("Drag Horizontal"));
-        Debug.Log("Current Button: " + currentButton);
     }
 
     private void UpdateUI()
