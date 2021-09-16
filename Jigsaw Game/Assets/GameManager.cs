@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
         audi = GetComponent<AudioSource>();
         zIndex = 1;
     }
-
     private void Update()
     {
         if (piecesRemaining <= 0)

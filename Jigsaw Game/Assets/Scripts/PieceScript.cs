@@ -1,57 +1,42 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.Rendering;
-using Rewired;
 
 public class PieceScript : MonoBehaviour
 {
+    private Vector3 newPosition; //use outside
     private bool movable;
     private bool positionSet;
     private GameManager GM;
     private Vector3 correctPosition;
     private SortingGroup sortGroup;
-    private Player player;
+    private bool moved;
 
     private void Start()
     {
         // sorting group set
-        player = ReInput.players.GetPlayer(0);
         GM = FindObjectOfType<GameManager>();
         sortGroup = GetComponent<SortingGroup>();
         correctPosition = transform.position;
         if (Random.Range(1, 101) < 50)
-        {
-            transform.position = new Vector3(Random.Range(5f, 8f), Random.Range(-3.0f, 3.0f), GM.zIndex);
-            GetComponent<SortingGroup>().sortingOrder = GM.zIndex;
-        }
-        
+            newPosition = new Vector3(Random.Range(5f, 8f), Random.Range(-3.0f, 3.0f), GM.zIndex);
         else
-        {
-            transform.position = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
-            GetComponent<SortingGroup>().sortingOrder = GM.zIndex;
-        }
+            newPosition = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
         
-        //SetTarget position and move it there with lerp or something
+        GetComponent<SortingGroup>().sortingOrder = GM.zIndex;
         GM.zIndex++;
+        GetComponent<SpriteRenderer>().color = Color.gray;
     }
 
     private void Update()
     {
-        Invoke("PositionCheck",1f);
+        if(!moved)
+            Invoke("AnimatePieceMove", 1f);
+        else
+            AnimatePieceMove();
+        Invoke("PositionCheck", 2f);
         //TouchMove();
         //RewiredMove();
-    }
-
-    private void RewiredMove()
-    {
-        if (player.GetAxis("Drag Horizontal") == 0f && player.GetAxis("Drag Vertical") == 0f)
-        {
-            //fwafa
-            if (player.GetButtonDown("TouchClick"))
-            {
-                
-            }
-        }
     }
 
     private void TouchMove()
@@ -80,6 +65,7 @@ public class PieceScript : MonoBehaviour
     }
     private void PositionCheck()
     {
+        Time.timeScale = 1f;
         if (Vector3.Distance(transform.position, correctPosition) < 0.5f)
         {
             if (!positionSet)
@@ -88,7 +74,7 @@ public class PieceScript : MonoBehaviour
                 GM.CorrectPieceSoundPlay();
                 GM.piecesRemaining--;
                 sortGroup.sortingOrder = 0;
-                GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+                GetComponent<SpriteRenderer>().color = Color.clear;
                 positionSet = true;
             }
             
@@ -96,5 +82,12 @@ public class PieceScript : MonoBehaviour
             transform.position = correctPosition;
             sortGroup.sortingOrder = 0;
         }
+    }
+
+    private void AnimatePieceMove()
+    {
+        if(CompareTag("OpenPiece") && transform.position != newPosition)
+            transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime);
+        moved = true;
     }
 }

@@ -11,7 +11,6 @@ public class PointerRemote : MonoBehaviour
     public float pointerSpeed;
     private GameManager GM;
     private Player player;
-    //private Rigidbody2D rb;
     private GameObject currentObject;
     private bool holdingObject;
     private bool menuActive;
@@ -19,7 +18,6 @@ public class PointerRemote : MonoBehaviour
     {
         GM = FindObjectOfType<GameManager>();
         player = ReInput.players.GetPlayer(0);
-        //rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -40,15 +38,13 @@ public class PointerRemote : MonoBehaviour
             {
                 GetComponent<SpriteRenderer>().enabled = false;
                 currentObject = ClosestObject(nearbyObjects).gameObject;
-                currentObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
+                currentObject.GetComponent<SpriteRenderer>().color = Color.white;
                 currentObject.GetComponent<SortingGroup>().sortingOrder = GM.zIndex++;
                 GM.PickUpSoundPlay();
                 holdingObject = true;
             }
             else if (ClosestObject(nearbyObjects).CompareTag("Pause"))
-            {
                 ClosestObject(nearbyObjects).GetComponent<Button>().onClick.Invoke();
-            }
             
         }
 
@@ -57,8 +53,8 @@ public class PointerRemote : MonoBehaviour
             if (player.GetButtonDown("Back Button") || player.GetButtonDown("Menu Button"))
             {
                 GetComponent<SpriteRenderer>().enabled = true;
-                currentObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 110);
-                RespawnObject(currentObject);
+                currentObject.GetComponent<SpriteRenderer>().color = Color.gray;
+                //currentObject.GetComponent<SpriteRenderer>().color = Color.grey;
                 holdingObject = false;
             }
             else if(currentObject.CompareTag("OpenPiece"))
@@ -114,12 +110,12 @@ public class PointerRemote : MonoBehaviour
         return closestObj;
     }
 
-    private void RespawnObject(GameObject obj)
-    {
-        if (Random.Range(1, 101) < 50)
-            obj.transform.position = new Vector3(Random.Range(5f, 8f), Random.Range(-3.0f, 3.0f), GM.zIndex);
-
-        else
-            obj.transform.position = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
-    }
+    // private void RespawnObject(GameObject obj)
+    // {
+    //     if (Random.Range(1, 101) < 50)
+    //         obj.transform.position = new Vector3(Random.Range(5f, 8f), Random.Range(-3.0f, 3.0f), GM.zIndex);
+    //     
+    //     else
+    //         obj.transform.position = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
+    // }
 }
