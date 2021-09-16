@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public AudioClip winSound;
     public AudioClip whooshSound;
     private bool gameWon;
+    private bool testBool;
     
     
     private AudioSource audi;
@@ -110,5 +111,22 @@ public class GameManager : MonoBehaviour
     void WhooshSoundPlay()
     {
         audi.PlayOneShot(whooshSound);
+    }
+
+    public void ControlChange(Image img)
+    {
+        if (UnityEngine.tvOS.Remote.reportAbsoluteDpadValues)
+        {
+            img.color = Color.white;
+            UnityEngine.tvOS.Remote.reportAbsoluteDpadValues = false;
+        }
+        else
+        {
+            img.color = Color.green;
+            UnityEngine.tvOS.Remote.reportAbsoluteDpadValues = true;
+        }
+            
+        
+        Debug.Log(UnityEngine.tvOS.Remote.reportAbsoluteDpadValues);
     }
 }

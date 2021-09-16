@@ -3,6 +3,8 @@ using Random = UnityEngine.Random;
 using Rewired;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
+using UnityEngine.tvOS;
+//UnityEngine.Apple.TV.Remote.allowExitToHome is false to enable menu button
 
 public class PointerRemote : MonoBehaviour
 {
@@ -11,11 +13,12 @@ public class PointerRemote : MonoBehaviour
     private Player player;
     private Rigidbody2D rb;
     private GameObject currentObject;
-    //private Collider2D[] nearbyObjects;
     private bool holdingObject;
     private bool menuActive;
     void Start()
     {
+        Remote.reportAbsoluteDpadValues = true;
+        Cursor.lockState = CursorLockMode.Locked;
         GM = FindObjectOfType<GameManager>();
         player = ReInput.players.GetPlayer(0);
         rb = GetComponent<Rigidbody2D>();
@@ -90,9 +93,7 @@ public class PointerRemote : MonoBehaviour
         
         
         transform.position = clampedPosition ;
-        rb.MovePosition(  transform.position + direction*Time.deltaTime*pointerSpeed); //maybe problem fix needed auto move
-        
-        //if()
+        rb.MovePosition(  transform.position + direction * Time.deltaTime * pointerSpeed); //maybe problem fix needed auto move
     }
 
     private Collider2D ClosestObject(Collider2D[] collisionList)
