@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 11858586}
   - component: {fileID: 11858585}
   - component: {fileID: 11858584}
-  - component: {fileID: 11858583}
   - component: {fileID: 11858582}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (5)
@@ -157,27 +156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &11858583
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 11858581}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &11858584
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -344,7 +322,6 @@ GameObject:
   - component: {fileID: 13811324}
   - component: {fileID: 13811323}
   - component: {fileID: 13811322}
-  - component: {fileID: 13811321}
   - component: {fileID: 13811320}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (1)
@@ -365,27 +342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &13811321
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13811319}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &13811322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -713,7 +669,6 @@ GameObject:
   - component: {fileID: 42240195}
   - component: {fileID: 42240194}
   - component: {fileID: 42240193}
-  - component: {fileID: 42240192}
   - component: {fileID: 42240191}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (11)
@@ -734,27 +689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &42240192
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 42240190}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &42240193
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -921,7 +855,6 @@ GameObject:
   - component: {fileID: 55130881}
   - component: {fileID: 55130880}
   - component: {fileID: 55130879}
-  - component: {fileID: 55130878}
   - component: {fileID: 55130877}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (8)
@@ -942,27 +875,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &55130878
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55130876}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &55130879
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1457,7 +1369,6 @@ GameObject:
   - component: {fileID: 261471198}
   - component: {fileID: 261471197}
   - component: {fileID: 261471196}
-  - component: {fileID: 261471195}
   - component: {fileID: 261471194}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (3)
@@ -1478,27 +1389,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &261471195
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261471193}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &261471196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1665,7 +1555,6 @@ GameObject:
   - component: {fileID: 274578943}
   - component: {fileID: 274578942}
   - component: {fileID: 274578941}
-  - component: {fileID: 274578940}
   - component: {fileID: 274578939}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (5)
@@ -1686,27 +1575,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &274578940
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274578938}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &274578941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2344,7 +2212,6 @@ GameObject:
   - component: {fileID: 421244430}
   - component: {fileID: 421244429}
   - component: {fileID: 421244428}
-  - component: {fileID: 421244427}
   - component: {fileID: 421244426}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (2)
@@ -2365,27 +2232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &421244427
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421244425}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &421244428
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7578,7 +7424,6 @@ GameObject:
   - component: {fileID: 487933420}
   - component: {fileID: 487933419}
   - component: {fileID: 487933418}
-  - component: {fileID: 487933417}
   - component: {fileID: 487933416}
   m_Layer: 0
   m_Name: Pieces_1(Clone)
@@ -7599,27 +7444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &487933417
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487933415}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &487933418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7786,7 +7610,6 @@ GameObject:
   - component: {fileID: 496182388}
   - component: {fileID: 496182387}
   - component: {fileID: 496182386}
-  - component: {fileID: 496182385}
   - component: {fileID: 496182384}
   m_Layer: 0
   m_Name: Pieces_4(Clone)
@@ -7807,27 +7630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &496182385
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496182383}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &496182386
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8508,7 +8310,6 @@ GameObject:
   - component: {fileID: 631009535}
   - component: {fileID: 631009534}
   - component: {fileID: 631009533}
-  - component: {fileID: 631009532}
   - component: {fileID: 631009531}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (10)
@@ -8529,27 +8330,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &631009532
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631009530}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &631009533
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8816,7 +8596,6 @@ GameObject:
   - component: {fileID: 648768177}
   - component: {fileID: 648768176}
   - component: {fileID: 648768175}
-  - component: {fileID: 648768174}
   - component: {fileID: 648768173}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (6)
@@ -8837,27 +8616,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &648768174
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648768172}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &648768175
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9024,7 +8782,6 @@ GameObject:
   - component: {fileID: 661755506}
   - component: {fileID: 661755505}
   - component: {fileID: 661755504}
-  - component: {fileID: 661755503}
   - component: {fileID: 661755502}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (14)
@@ -9045,27 +8802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &661755503
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 661755501}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &661755504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9314,7 +9050,6 @@ GameObject:
   - component: {fileID: 672089819}
   - component: {fileID: 672089818}
   - component: {fileID: 672089817}
-  - component: {fileID: 672089816}
   - component: {fileID: 672089815}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (7)
@@ -9335,27 +9070,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &672089816
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672089814}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &672089817
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9838,7 +9552,6 @@ GameObject:
   - component: {fileID: 873559861}
   - component: {fileID: 873559860}
   - component: {fileID: 873559859}
-  - component: {fileID: 873559858}
   - component: {fileID: 873559857}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (7)
@@ -9859,27 +9572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &873559858
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 873559856}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &873559859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10280,7 +9972,6 @@ GameObject:
   - component: {fileID: 1002819276}
   - component: {fileID: 1002819275}
   - component: {fileID: 1002819274}
-  - component: {fileID: 1002819273}
   - component: {fileID: 1002819272}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (3)
@@ -10301,27 +9992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1002819273
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002819271}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1002819274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10488,7 +10158,6 @@ GameObject:
   - component: {fileID: 1025539618}
   - component: {fileID: 1025539617}
   - component: {fileID: 1025539616}
-  - component: {fileID: 1025539615}
   - component: {fileID: 1025539614}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (15)
@@ -10509,27 +10178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1025539615
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025539613}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1025539616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10778,7 +10426,6 @@ GameObject:
   - component: {fileID: 1086136671}
   - component: {fileID: 1086136670}
   - component: {fileID: 1086136669}
-  - component: {fileID: 1086136668}
   - component: {fileID: 1086136667}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (4)
@@ -10799,27 +10446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1086136668
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086136666}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1086136669
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10986,7 +10612,6 @@ GameObject:
   - component: {fileID: 1090130505}
   - component: {fileID: 1090130504}
   - component: {fileID: 1090130503}
-  - component: {fileID: 1090130502}
   - component: {fileID: 1090130501}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (3)
@@ -11007,27 +10632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1090130502
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090130500}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1090130503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11194,7 +10798,6 @@ GameObject:
   - component: {fileID: 1091057743}
   - component: {fileID: 1091057742}
   - component: {fileID: 1091057741}
-  - component: {fileID: 1091057740}
   - component: {fileID: 1091057739}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (6)
@@ -11215,27 +10818,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1091057740
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091057738}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1091057741
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11976,7 +11558,6 @@ GameObject:
   - component: {fileID: 1273235506}
   - component: {fileID: 1273235505}
   - component: {fileID: 1273235504}
-  - component: {fileID: 1273235503}
   - component: {fileID: 1273235502}
   m_Layer: 0
   m_Name: Pieces_3(Clone)
@@ -11997,27 +11578,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1273235503
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273235501}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1273235504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12184,7 +11744,6 @@ GameObject:
   - component: {fileID: 1310498190}
   - component: {fileID: 1310498189}
   - component: {fileID: 1310498188}
-  - component: {fileID: 1310498187}
   - component: {fileID: 1310498186}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (13)
@@ -12205,27 +11764,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1310498187
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310498185}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1310498188
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12638,7 +12176,6 @@ GameObject:
   - component: {fileID: 1377603286}
   - component: {fileID: 1377603285}
   - component: {fileID: 1377603284}
-  - component: {fileID: 1377603283}
   - component: {fileID: 1377603282}
   m_Layer: 0
   m_Name: Pieces_1(Clone) (3)
@@ -12659,27 +12196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1377603283
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377603281}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1377603284
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13146,7 +12662,6 @@ GameObject:
   - component: {fileID: 1507823137}
   - component: {fileID: 1507823136}
   - component: {fileID: 1507823135}
-  - component: {fileID: 1507823134}
   - component: {fileID: 1507823133}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (2)
@@ -13167,27 +12682,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1507823134
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507823132}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1507823135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13513,7 +13007,6 @@ GameObject:
   - component: {fileID: 1562514804}
   - component: {fileID: 1562514803}
   - component: {fileID: 1562514802}
-  - component: {fileID: 1562514801}
   - component: {fileID: 1562514800}
   m_Layer: 0
   m_Name: Pieces_1(Clone) (2)
@@ -13534,27 +13027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1562514801
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562514799}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1562514802
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14021,7 +13493,6 @@ GameObject:
   - component: {fileID: 1645709500}
   - component: {fileID: 1645709499}
   - component: {fileID: 1645709498}
-  - component: {fileID: 1645709497}
   - component: {fileID: 1645709496}
   m_Layer: 0
   m_Name: Pieces_1(Clone) (1)
@@ -14042,27 +13513,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1645709497
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645709495}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1645709498
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14425,7 +13875,6 @@ GameObject:
   - component: {fileID: 1783637323}
   - component: {fileID: 1783637322}
   - component: {fileID: 1783637321}
-  - component: {fileID: 1783637320}
   - component: {fileID: 1783637319}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (7)
@@ -14446,27 +13895,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1783637320
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783637318}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1783637321
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14633,7 +14061,6 @@ GameObject:
   - component: {fileID: 1789806126}
   - component: {fileID: 1789806125}
   - component: {fileID: 1789806124}
-  - component: {fileID: 1789806123}
   - component: {fileID: 1789806122}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (6)
@@ -14654,27 +14081,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1789806123
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789806121}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1789806124
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14841,7 +14247,6 @@ GameObject:
   - component: {fileID: 1812798956}
   - component: {fileID: 1812798955}
   - component: {fileID: 1812798954}
-  - component: {fileID: 1812798953}
   - component: {fileID: 1812798952}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (12)
@@ -14862,27 +14267,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1812798953
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812798951}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1812798954
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15049,7 +14433,6 @@ GameObject:
   - component: {fileID: 1816010381}
   - component: {fileID: 1816010380}
   - component: {fileID: 1816010379}
-  - component: {fileID: 1816010378}
   - component: {fileID: 1816010377}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (1)
@@ -15070,27 +14453,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1816010378
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816010376}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1816010379
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15339,7 +14701,6 @@ GameObject:
   - component: {fileID: 1874015636}
   - component: {fileID: 1874015635}
   - component: {fileID: 1874015634}
-  - component: {fileID: 1874015633}
   - component: {fileID: 1874015632}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (2)
@@ -15360,27 +14721,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1874015633
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1874015631}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1874015634
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15547,7 +14887,6 @@ GameObject:
   - component: {fileID: 1902494671}
   - component: {fileID: 1902494670}
   - component: {fileID: 1902494669}
-  - component: {fileID: 1902494668}
   - component: {fileID: 1902494667}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (4)
@@ -15568,27 +14907,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1902494668
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902494666}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1902494669
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15820,7 +15138,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: -1093131907
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &1902534436
 RectTransform:
@@ -15857,7 +15175,6 @@ GameObject:
   - component: {fileID: 1919067136}
   - component: {fileID: 1919067135}
   - component: {fileID: 1919067134}
-  - component: {fileID: 1919067133}
   - component: {fileID: 1919067132}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (9)
@@ -15878,27 +15195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1919067133
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919067131}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1919067134
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16324,7 +15620,6 @@ GameObject:
   - component: {fileID: 1948636801}
   - component: {fileID: 1948636800}
   - component: {fileID: 1948636799}
-  - component: {fileID: 1948636798}
   - component: {fileID: 1948636797}
   m_Layer: 0
   m_Name: Pieces_2(Clone) (1)
@@ -16345,27 +15640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1948636798
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1948636796}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1948636799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16532,7 +15806,6 @@ GameObject:
   - component: {fileID: 1951715312}
   - component: {fileID: 1951715311}
   - component: {fileID: 1951715310}
-  - component: {fileID: 1951715309}
   - component: {fileID: 1951715308}
   m_Layer: 0
   m_Name: Pieces_4(Clone) (4)
@@ -16553,27 +15826,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1951715309
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951715307}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1951715310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16740,7 +15992,6 @@ GameObject:
   - component: {fileID: 1963286751}
   - component: {fileID: 1963286750}
   - component: {fileID: 1963286749}
-  - component: {fileID: 1963286748}
   - component: {fileID: 1963286747}
   m_Layer: 0
   m_Name: Pieces_3(Clone) (5)
@@ -16761,27 +16012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1963286748
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963286746}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1963286749
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17264,7 +16494,6 @@ GameObject:
   - component: {fileID: 2016234491}
   - component: {fileID: 2016234490}
   - component: {fileID: 2016234489}
-  - component: {fileID: 2016234488}
   - component: {fileID: 2016234487}
   m_Layer: 0
   m_Name: Pieces_2(Clone)
@@ -17285,27 +16514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &2016234488
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2016234486}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &2016234489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17470,7 +16678,6 @@ GameObject:
   - component: {fileID: 2026000608}
   - component: {fileID: 2026000607}
   - component: {fileID: 2026000606}
-  - component: {fileID: 2026000605}
   m_Layer: 0
   m_Name: Pointer
   m_TagString: Untagged
@@ -17478,27 +16685,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!50 &2026000605
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2026000604}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &2026000606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17511,7 +16697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde4448c83fe2fd40a90d657f2d9885d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointerSpeed: 10
+  pointerSpeed: 3
 --- !u!212 &2026000607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17551,7 +16737,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1093131907
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 1, g: 0.09402679, b: 0, a: 1}
   m_FlipX: 0

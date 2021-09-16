@@ -11,17 +11,15 @@ public class PointerRemote : MonoBehaviour
     public float pointerSpeed;
     private GameManager GM;
     private Player player;
-    private Rigidbody2D rb;
+    //private Rigidbody2D rb;
     private GameObject currentObject;
     private bool holdingObject;
     private bool menuActive;
     void Start()
     {
-        Remote.reportAbsoluteDpadValues = true;
-        Cursor.lockState = CursorLockMode.Locked;
         GM = FindObjectOfType<GameManager>();
         player = ReInput.players.GetPlayer(0);
-        rb = GetComponent<Rigidbody2D>();
+        //rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -93,7 +91,9 @@ public class PointerRemote : MonoBehaviour
         
         
         transform.position = clampedPosition ;
-        rb.MovePosition(  transform.position + direction * Time.deltaTime * pointerSpeed); //maybe problem fix needed auto move
+        transform.position += direction * Time.deltaTime * pointerSpeed;
+        //rb.MovePosition(  transform.position + direction * Time.deltaTime * pointerSpeed); //maybe problem fix needed auto move
+        
     }
 
     private Collider2D ClosestObject(Collider2D[] collisionList)

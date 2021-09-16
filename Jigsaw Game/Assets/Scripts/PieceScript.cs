@@ -30,7 +30,8 @@ public class PieceScript : MonoBehaviour
             transform.position = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
             GetComponent<SortingGroup>().sortingOrder = GM.zIndex;
         }
-            
+        
+        //SetTarget position and move it there with lerp or something
         GM.zIndex++;
     }
 
