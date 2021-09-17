@@ -111,21 +111,4 @@ public class GameManager : MonoBehaviour
     {
         audi.PlayOneShot(whooshSound);
     }
-
-    public void ControlChange(Image img)
-    {
-        if (UnityEngine.tvOS.Remote.reportAbsoluteDpadValues)
-        {
-            img.color = Color.white;
-            UnityEngine.tvOS.Remote.reportAbsoluteDpadValues = false;
-        }
-        else
-        {
-            img.color = Color.green;
-            UnityEngine.tvOS.Remote.reportAbsoluteDpadValues = true;
-        }
-            
-        
-        Debug.Log(UnityEngine.tvOS.Remote.reportAbsoluteDpadValues);
-    }
 }

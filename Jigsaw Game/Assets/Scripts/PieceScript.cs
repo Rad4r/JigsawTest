@@ -5,16 +5,18 @@ using UnityEngine.Rendering;
 public class PieceScript : MonoBehaviour
 {
     private Vector3 newPosition; //use outside
+    private PointerRemote pr;
     private bool movable;
     private bool positionSet;
     private GameManager GM;
     private Vector3 correctPosition;
     private SortingGroup sortGroup;
-    private bool moved;
+    //private bool moved;
 
     private void Start()
     {
         // sorting group set
+        pr = FindObjectOfType<PointerRemote>();
         GM = FindObjectOfType<GameManager>();
         sortGroup = GetComponent<SortingGroup>();
         correctPosition = transform.position;
@@ -30,10 +32,7 @@ public class PieceScript : MonoBehaviour
 
     private void Update()
     {
-        if(!moved)
-            Invoke("AnimatePieceMove", 1f);
-        else
-            AnimatePieceMove();
+        Invoke("AnimatePieceMove", 1f);
         Invoke("PositionCheck", 2f);
         //TouchMove();
         //RewiredMove();
@@ -86,8 +85,8 @@ public class PieceScript : MonoBehaviour
 
     private void AnimatePieceMove()
     {
-        if(CompareTag("OpenPiece") && transform.position != newPosition)
+        if(CompareTag("OpenPiece") && transform.position != newPosition && pr.holdingObject == false)
             transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime);
-        moved = true;
+        //moved = true;
     }
 }

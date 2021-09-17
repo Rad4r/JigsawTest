@@ -18,7 +18,7 @@ public class ButtonChangePause : MonoBehaviour
     {
         GM = FindObjectOfType<GameManager>();
         buttonChangeDelay = 0.4f; // could change
-        maxButtonChangeAxisLimit = 0.5f;
+        maxButtonChangeAxisLimit = 0.8f;
         player = ReInput.players.GetPlayer(0);
         Debug.Log(buttons[currentButton].name);
         buttonReset = true;

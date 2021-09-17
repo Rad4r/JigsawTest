@@ -8,6 +8,7 @@ TagManager:
   - Pause
   - OpenPiece
   - ClosedPiece
+  - ControlChange
   layers:
   - Default
   - TransparentFX

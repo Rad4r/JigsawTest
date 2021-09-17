@@ -10,7 +10,7 @@ public class PointerRemote : MonoBehaviour
     private GameManager GM;
     private Player player;
     private GameObject currentObject;
-    private bool holdingObject;
+    public bool holdingObject;
     private bool menuActive;
     void Start()
     {
@@ -53,7 +53,6 @@ public class PointerRemote : MonoBehaviour
             {
                 GetComponent<SpriteRenderer>().enabled = true;
                 currentObject.GetComponent<SpriteRenderer>().color = Color.gray;
-                //currentObject.GetComponent<SpriteRenderer>().color = Color.grey;
                 holdingObject = false;
             }
             else if(currentObject.CompareTag("OpenPiece"))
