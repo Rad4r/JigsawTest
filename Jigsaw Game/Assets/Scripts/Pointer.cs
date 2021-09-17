@@ -7,14 +7,12 @@ public class Pointer : MonoBehaviour
 {
     public float pointerSpeed;
     private GameManager GM;
-    private Player player;
     private Rigidbody2D rb;
     private GameObject currentObject;
     private bool holdingObject;
     void Start()
     {
         GM = FindObjectOfType<GameManager>();
-        player = ReInput.players.GetPlayer(0);
         rb = GetComponent<Rigidbody2D>();
         Debug.Log(Screen.width);
     }

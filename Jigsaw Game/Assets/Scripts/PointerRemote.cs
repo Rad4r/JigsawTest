@@ -1,9 +1,7 @@
 using UnityEngine;
-using Random = UnityEngine.Random;
 using Rewired;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
-using UnityEngine.tvOS;
 //UnityEngine.Apple.TV.Remote.allowExitToHome is false to enable menu button
 
 public class PointerRemote : MonoBehaviour
@@ -16,6 +14,7 @@ public class PointerRemote : MonoBehaviour
     private bool menuActive;
     void Start()
     {
+        UnityEngine.tvOS.Remote.allowExitToHome = false;
         GM = FindObjectOfType<GameManager>();
         player = ReInput.players.GetPlayer(0);
     }

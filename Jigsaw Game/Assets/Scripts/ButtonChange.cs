@@ -16,8 +16,9 @@ public class ButtonChange : MonoBehaviour
 
     private void Start()
     {
+        UnityEngine.tvOS.Remote.allowExitToHome = true;
         buttonChangeDelay = 0.2f; // could change
-        maxButtonChangeAxisLimit = 0.4f;
+        maxButtonChangeAxisLimit = 0.6f;
         player = ReInput.players.GetPlayer(0);
         Debug.Log(buttons[currentButton].name);
         buttonReset = true;
