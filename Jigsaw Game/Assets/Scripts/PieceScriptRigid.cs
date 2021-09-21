@@ -2,10 +2,10 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.Rendering;
 
-public class PieceScript : MonoBehaviour
+public class PieceScriptRigid : MonoBehaviour
 {
     private Vector3 newPosition; //use outside
-    private PointerRemote pr;
+    private PointerRemoteRigid pr;
     private bool movable;
     private bool positionSet;
     private GameManager GM;
@@ -16,23 +16,23 @@ public class PieceScript : MonoBehaviour
     private void Start()
     {
         // sorting group set
-        pr = FindObjectOfType<PointerRemote>();
+        pr = FindObjectOfType<PointerRemoteRigid>();
         GM = FindObjectOfType<GameManager>();
         sortGroup = GetComponent<SortingGroup>();
         correctPosition = transform.position;
         if (Random.Range(1, 101) < 50)
-            transform.position = new Vector3(Random.Range(5f, 8f), Random.Range(-3.0f, 3.0f), GM.zIndex);
+            newPosition = new Vector3(Random.Range(5f, 8f), Random.Range(-3.0f, 3.0f), GM.zIndex);
         else
-            transform.position = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
+            newPosition = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
         
         GetComponent<SortingGroup>().sortingOrder = GM.zIndex;
-        GetComponent<SpriteRenderer>().color = Color.gray;
         GM.zIndex++;
+        GetComponent<SpriteRenderer>().color = Color.gray;
     }
 
     private void Update()
     {
-        //Invoke("AnimatePieceMove", 1f);
+        Invoke("AnimatePieceMove", 1f);
         Invoke("PositionCheck", 2f);
         //TouchMove();
         //RewiredMove();
@@ -64,7 +64,7 @@ public class PieceScript : MonoBehaviour
     }
     private void PositionCheck()
     {
-        if (Vector2.Distance(transform.position, correctPosition) < 0.5f) // change to vector 2
+        if (Vector2.Distance(transform.position, correctPosition) < 0.5f)
         {
             if (!positionSet)
             {
@@ -76,16 +76,16 @@ public class PieceScript : MonoBehaviour
                 positionSet = true;
             }
             
-            GetComponent<PieceScript>().enabled = false;
+            GetComponent<PieceScriptRigid>().enabled = false;
             transform.position = correctPosition;
             sortGroup.sortingOrder = 0;
         }
     }
 
-    // private void AnimatePieceMove()
-    // {
-    //     if(CompareTag("OpenPiece") && transform.position != newPosition && pr.holdingObject == false)
-    //         transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime);
-    //     //moved = true;
-    // }
+    private void AnimatePieceMove()
+    {
+        if(CompareTag("OpenPiece") && transform.position != newPosition && pr.holdingObject == false)
+            transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime);
+        //moved = true;
+    }
 }

@@ -3,9 +3,9 @@ using Rewired;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
-public class PointerRemote : MonoBehaviour
+public class PointerRemoteScreen : MonoBehaviour
 {
-    public float pointerSpeed;
+    //public float pointerSpeed;
     private GameManager GM;
     private Player player;
     private GameObject currentObject;
@@ -77,8 +77,13 @@ public class PointerRemote : MonoBehaviour
 
     private void MovePointer()
     {
-        Vector3 direction = new Vector2(player.GetAxis("Drag Horizontal"), player.GetAxis("Drag Vertical")).normalized;
-        transform.position += direction * Time.deltaTime * pointerSpeed;
+        Vector2 WorldPosition = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
+        if (player.GetAxis("Drag Horizontal") != 0 && player.GetAxis("Drag Vertical") != 0)
+        {
+            Vector3 moveVector = new Vector3(WorldPosition.x * player.GetAxis("Drag Horizontal"),
+                WorldPosition.y * player.GetAxis("Drag Vertical"), 1);
+            transform.position = moveVector;
+        }
     }
 
     private Collider2D ClosestObject(Collider2D[] collisionList)
@@ -98,13 +103,4 @@ public class PointerRemote : MonoBehaviour
 
         return closestObj;
     }
-
-    // private void RespawnObject(GameObject obj)
-    // {
-    //     if (Random.Range(1, 101) < 50)
-    //         obj.transform.position = new Vector3(Random.Range(5f, 8f), Random.Range(-3.0f, 3.0f), GM.zIndex);
-    //     
-    //     else
-    //         obj.transform.position = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
-    // }
 }

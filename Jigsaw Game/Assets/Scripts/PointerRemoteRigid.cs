@@ -3,7 +3,7 @@ using Rewired;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
-public class PointerRemote : MonoBehaviour
+public class PointerRemoteRigid : MonoBehaviour
 {
     public float pointerSpeed;
     private GameManager GM;
@@ -11,8 +11,10 @@ public class PointerRemote : MonoBehaviour
     private GameObject currentObject;
     public bool holdingObject;
     private bool menuActive;
+    private Rigidbody2D rb;
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         UnityEngine.tvOS.Remote.allowExitToHome = false;
         GM = FindObjectOfType<GameManager>();
         player = ReInput.players.GetPlayer(0);
@@ -78,7 +80,7 @@ public class PointerRemote : MonoBehaviour
     private void MovePointer()
     {
         Vector3 direction = new Vector2(player.GetAxis("Drag Horizontal"), player.GetAxis("Drag Vertical")).normalized;
-        transform.position += direction * Time.deltaTime * pointerSpeed;
+        rb.MovePosition(transform.position + direction * Time.deltaTime * pointerSpeed);
     }
 
     private Collider2D ClosestObject(Collider2D[] collisionList)
