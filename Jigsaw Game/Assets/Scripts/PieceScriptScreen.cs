@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 public class PieceScriptScreen : MonoBehaviour
 {
     private Vector3 newPosition; //use outside
-    private PointerRemoteScreen pr;
+    private PointerRemoteDampening pr;
     private bool movable;
     private bool positionSet;
     private GameManager GM;
@@ -16,7 +16,7 @@ public class PieceScriptScreen : MonoBehaviour
     private void Start()
     {
         // sorting group set
-        pr = FindObjectOfType<PointerRemoteScreen>();
+        pr = FindObjectOfType<PointerRemoteDampening>();
         GM = FindObjectOfType<GameManager>();
         sortGroup = GetComponent<SortingGroup>();
         correctPosition = transform.position;

@@ -7699,7 +7699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79b22c3fc408b1349a3d84cb79163f9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointerSpeed: 0.005
+  pointerSpeed: 10
   holdingObject: 0
 --- !u!212 &739007949
 SpriteRenderer:

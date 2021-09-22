@@ -78,11 +78,8 @@ public class PointerRemoteDampening : MonoBehaviour
 
     private void MovePointer()
     {
-        //TouchMove();
-        //Drag to the Object
-        //rigidbody for drag
-        Vector3 direction = new Vector2(player.GetAxis("Drag Horizontal"), player.GetAxis("Drag Vertical")).normalized;
-         transform.position += direction * pointerSpeed;
+        PointerClamp();
+        TouchMove();
         
          // if(Input.GetButton("D Horizontal"))
          //     transform.position += (Vector3) Vector2.right * 5f;
@@ -94,6 +91,15 @@ public class PointerRemoteDampening : MonoBehaviour
         //Input.GetKeyDown(KeyCode.JoystickButton6) D-pad Down
         //Input.GetKeyDown(KeyCode.JoystickButton7) D-pad Left
 
+        if (Input.GetKeyDown(KeyCode.JoystickButton4))
+            transform.position += Vector3.up * Time.deltaTime * pointerSpeed;
+        if (Input.GetKeyDown(KeyCode.JoystickButton5))
+            transform.position += Vector3.right * Time.deltaTime * pointerSpeed;
+        if (Input.GetKeyDown(KeyCode.JoystickButton6))
+            transform.position += Vector3.down * Time.deltaTime * pointerSpeed;
+        if (Input.GetKeyDown(KeyCode.JoystickButton7))
+            transform.position += Vector3.left * Time.deltaTime * pointerSpeed;
+
     }
     
     private void TouchMove()
@@ -104,17 +110,20 @@ public class PointerRemoteDampening : MonoBehaviour
             Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
 
             if (touch.phase == TouchPhase.Began)
-            {
-                    movable = true;
-                    GM.PickUpSoundPlay();
-            }
-            if (touch.phase == TouchPhase.Moved && movable)
-                transform.position = new Vector2(touchPosition.x, touchPosition.y);
-            
-            if (touch.phase == TouchPhase.Ended)
-                movable = false;
+                GM.PickUpSoundPlay();
+            if (touch.phase == TouchPhase.Moved)
+                transform.position += new Vector3(touchPosition.x, touchPosition.y,0) * Time.deltaTime * pointerSpeed;
         }
     }
+
+    private void PointerClamp()
+    {
+        Vector2 WorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
+        Vector2 clampedPosition = new Vector2(Mathf.Clamp(transform.position.x, -WorldPosition.x, WorldPosition.x),
+            Mathf.Clamp(transform.position.y, -WorldPosition.y, WorldPosition.y));
+        transform.position = clampedPosition ;
+    }
+
 
     private Collider2D ClosestObject(Collider2D[] collisionList)
     {
