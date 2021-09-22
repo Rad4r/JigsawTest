@@ -14,7 +14,6 @@ public class PointerRemote : MonoBehaviour
     private bool movable;
     void Start()
     {
-        UnityEngine.tvOS.Remote.allowExitToHome = false;
         GM = FindObjectOfType<GameManager>();
         player = ReInput.players.GetPlayer(0);
     }

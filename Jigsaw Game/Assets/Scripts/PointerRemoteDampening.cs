@@ -14,7 +14,6 @@ public class PointerRemoteDampening : MonoBehaviour
     private bool movable;
     void Start()
     {
-        UnityEngine.tvOS.Remote.allowExitToHome = false;
         GM = FindObjectOfType<GameManager>();
         player = ReInput.players.GetPlayer(0);
     }
@@ -90,15 +89,24 @@ public class PointerRemoteDampening : MonoBehaviour
         //Input.GetKeyDown(KeyCode.JoystickButton5) D-pad Right
         //Input.GetKeyDown(KeyCode.JoystickButton6) D-pad Down
         //Input.GetKeyDown(KeyCode.JoystickButton7) D-pad Left
-
-        if (Input.GetKeyDown(KeyCode.JoystickButton4))
+        
+        if (Input.GetButton("D Up"))
             transform.position += Vector3.up * Time.deltaTime * pointerSpeed;
-        if (Input.GetKeyDown(KeyCode.JoystickButton5))
+        if (Input.GetButton("D Right"))
             transform.position += Vector3.right * Time.deltaTime * pointerSpeed;
-        if (Input.GetKeyDown(KeyCode.JoystickButton6))
+        if (Input.GetButton("D Down"))
             transform.position += Vector3.down * Time.deltaTime * pointerSpeed;
-        if (Input.GetKeyDown(KeyCode.JoystickButton7))
+        if (Input.GetButton("D Left"))
             transform.position += Vector3.left * Time.deltaTime * pointerSpeed;
+
+        // if (Input.GetKeyDown(KeyCode.JoystickButton4))
+        //     transform.position += Vector3.up * Time.deltaTime * pointerSpeed;
+        // if (Input.GetKeyDown(KeyCode.JoystickButton5))
+        //     transform.position += Vector3.right * Time.deltaTime * pointerSpeed;
+        // if (Input.GetKeyDown(KeyCode.JoystickButton6))
+        //     transform.position += Vector3.down * Time.deltaTime * pointerSpeed;
+        // if (Input.GetKeyDown(KeyCode.JoystickButton7))
+        //     transform.position += Vector3.left * Time.deltaTime * pointerSpeed;
 
     }
     
