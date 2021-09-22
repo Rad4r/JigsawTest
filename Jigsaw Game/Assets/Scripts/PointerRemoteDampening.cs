@@ -3,7 +3,7 @@ using Rewired;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
-public class PointerRemoteRigid : MonoBehaviour
+public class PointerRemoteDampening : MonoBehaviour
 {
     public float pointerSpeed;
     private GameManager GM;
@@ -11,10 +11,9 @@ public class PointerRemoteRigid : MonoBehaviour
     private GameObject currentObject;
     public bool holdingObject;
     private bool menuActive;
-    private Rigidbody2D rb;
+    private bool movable;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         UnityEngine.tvOS.Remote.allowExitToHome = false;
         GM = FindObjectOfType<GameManager>();
         player = ReInput.players.GetPlayer(0);
@@ -79,8 +78,42 @@ public class PointerRemoteRigid : MonoBehaviour
 
     private void MovePointer()
     {
+        //TouchMove();
+        //Drag to the Object
+        //rigidbody for drag
         Vector3 direction = new Vector2(player.GetAxis("Drag Horizontal"), player.GetAxis("Drag Vertical")).normalized;
-        rb.MovePosition(transform.position + direction * Time.deltaTime * pointerSpeed);
+         transform.position += direction * pointerSpeed;
+        
+         // if(Input.GetButton("D Horizontal"))
+         //     transform.position += (Vector3) Vector2.right * 5f;
+         // if(Input.GetButton("D Vertical"))
+         //     transform.position += (Vector3) Vector2.up * 5f;
+        
+        //Input.GetKeyDown(KeyCode.JoystickButton4) D-pad Up
+        //Input.GetKeyDown(KeyCode.JoystickButton5) D-pad Right
+        //Input.GetKeyDown(KeyCode.JoystickButton6) D-pad Down
+        //Input.GetKeyDown(KeyCode.JoystickButton7) D-pad Left
+
+    }
+    
+    private void TouchMove()
+    {
+        if(Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+
+            if (touch.phase == TouchPhase.Began)
+            {
+                    movable = true;
+                    GM.PickUpSoundPlay();
+            }
+            if (touch.phase == TouchPhase.Moved && movable)
+                transform.position = new Vector2(touchPosition.x, touchPosition.y);
+            
+            if (touch.phase == TouchPhase.Ended)
+                movable = false;
+        }
     }
 
     private Collider2D ClosestObject(Collider2D[] collisionList)

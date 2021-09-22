@@ -1,11 +1,12 @@
+using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.Rendering;
 
-public class PieceScriptRigid : MonoBehaviour
+public class PieceScriptGrid : MonoBehaviour
 {
+    public GridScript[] Grids;
     private Vector3 newPosition; //use outside
-    private PointerRemoteRigid pr;
     private bool movable;
     private bool positionSet;
     private GameManager GM;
@@ -13,26 +14,29 @@ public class PieceScriptRigid : MonoBehaviour
     private SortingGroup sortGroup;
     //private bool moved;
 
-    private void Start()
+    private void Awake()
     {
         // sorting group set
-        pr = FindObjectOfType<PointerRemoteRigid>();
         GM = FindObjectOfType<GameManager>();
         sortGroup = GetComponent<SortingGroup>();
         correctPosition = transform.position;
-        if (Random.Range(1, 101) < 50)
-            newPosition = new Vector3(Random.Range(5f, 8f), Random.Range(-3.0f, 3.0f), GM.zIndex);
-        else
-            newPosition = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
+
+        Invoke("GridFill", 1f);
+        
         
         GetComponent<SortingGroup>().sortingOrder = GM.zIndex;
-        GM.zIndex++;
         GetComponent<SpriteRenderer>().color = Color.gray;
+        GM.zIndex++;
+    }
+
+    private void Start()
+    {
+        
     }
 
     private void Update()
     {
-        Invoke("AnimatePieceMove", 1f);
+        //Invoke("AnimatePieceMove", 1f);
         Invoke("PositionCheck", 2f);
         //TouchMove();
         //RewiredMove();
@@ -64,7 +68,7 @@ public class PieceScriptRigid : MonoBehaviour
     }
     private void PositionCheck()
     {
-        if (Vector2.Distance(transform.position, correctPosition) < 0.5f)
+        if (Vector2.Distance(transform.position, correctPosition) < 0.5f) // change to vector 2
         {
             if (!positionSet)
             {
@@ -76,16 +80,24 @@ public class PieceScriptRigid : MonoBehaviour
                 positionSet = true;
             }
             
-            GetComponent<PieceScriptRigid>().enabled = false;
+            GetComponent<PieceScriptGrid>().enabled = false;
             transform.position = correctPosition;
             sortGroup.sortingOrder = 0;
         }
     }
 
-    private void AnimatePieceMove()
+    private void GridFill()
     {
-        if(CompareTag("OpenPiece") && transform.position != newPosition && pr.holdingObject == false)
-            transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime);
-        //moved = true;
+        if (Random.Range(1, 101) < 50 && Grids[0].GetGridCount() <= Grids[0].maxPieces)
+            Grids[0].AddPiece(gameObject);
+        else if(Grids[1].GetGridCount() <= Grids[1].maxPieces)
+            Grids[1].AddPiece(gameObject);
     }
+
+    // private void AnimatePieceMove()
+    // {
+    //     if(CompareTag("OpenPiece") && transform.position != newPosition && pr.holdingObject == false)
+    //         transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime);
+    //     //moved = true;
+    // }
 }
