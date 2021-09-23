@@ -12,6 +12,7 @@ public class PointerRemote : MonoBehaviour
     public bool holdingObject;
     private bool menuActive;
     private bool movable;
+    private Vector3 pointerOffset;
     void Start()
     {
         GM = FindObjectOfType<GameManager>();
@@ -84,9 +85,12 @@ public class PointerRemote : MonoBehaviour
             Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
 
             if (touch.phase == TouchPhase.Began)
+            {
+                pointerOffset = transform.position;
                 GM.PickUpSoundPlay();
+            }
             if (touch.phase == TouchPhase.Moved)
-                transform.position += new Vector3(touchPosition.x, touchPosition.y,0);
+                transform.position = new Vector3(touchPosition.x, touchPosition.y,0) + pointerOffset;
         }
     }
 

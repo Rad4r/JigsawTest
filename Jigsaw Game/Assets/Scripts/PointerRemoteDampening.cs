@@ -12,6 +12,7 @@ public class PointerRemoteDampening : MonoBehaviour
     public bool holdingObject;
     private bool menuActive;
     private bool movable;
+    private Vector3 positionOffset;
     void Start()
     {
         GM = FindObjectOfType<GameManager>();
@@ -90,14 +91,25 @@ public class PointerRemoteDampening : MonoBehaviour
         //Input.GetKeyDown(KeyCode.JoystickButton6) D-pad Down
         //Input.GetKeyDown(KeyCode.JoystickButton7) D-pad Left
         
-        if (Input.GetButton("D Up"))
-            transform.position += Vector3.up * Time.deltaTime * pointerSpeed;
-        if (Input.GetButton("D Right"))
+        //could disable touch as well
+        UnityEngine.tvOS.Remote.reportAbsoluteDpadValues = true;
+        if(player.GetAxis("Drag Horizontal") > 0.9)
             transform.position += Vector3.right * Time.deltaTime * pointerSpeed;
-        if (Input.GetButton("D Down"))
-            transform.position += Vector3.down * Time.deltaTime * pointerSpeed;
-        if (Input.GetButton("D Left"))
+        if(player.GetAxis("Drag Horizontal") < -0.9)
             transform.position += Vector3.left * Time.deltaTime * pointerSpeed;
+        if(player.GetAxis("Drag Vertical") > 0.9)
+            transform.position += Vector3.up * Time.deltaTime * pointerSpeed;
+        if(player.GetAxis("Drag Vertical") < -0.9)
+            transform.position += Vector3.down * Time.deltaTime * pointerSpeed;
+        
+        // if (Input.GetButton("D Up"))
+        //     transform.position += Vector3.up * Time.deltaTime * pointerSpeed;
+        // if (Input.GetButton("D Right"))
+        //     transform.position += Vector3.right * Time.deltaTime * pointerSpeed;
+        // if (Input.GetButton("D Down"))
+        //     transform.position += Vector3.down * Time.deltaTime * pointerSpeed;
+        // if (Input.GetButton("D Left"))
+        //     transform.position += Vector3.left * Time.deltaTime * pointerSpeed;
 
         // if (Input.GetKeyDown(KeyCode.JoystickButton4))
         //     transform.position += Vector3.up * Time.deltaTime * pointerSpeed;
@@ -118,9 +130,13 @@ public class PointerRemoteDampening : MonoBehaviour
             Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
 
             if (touch.phase == TouchPhase.Began)
+            {
+                positionOffset = transform.position;
                 GM.PickUpSoundPlay();
+            }
+                
             if (touch.phase == TouchPhase.Moved)
-                transform.position += new Vector3(touchPosition.x, touchPosition.y,0) * Time.deltaTime * pointerSpeed;
+                transform.position = positionOffset + new Vector3(touchPosition.x, touchPosition.y,0) * Time.deltaTime * pointerSpeed;
         }
     }
 
@@ -159,4 +175,18 @@ public class PointerRemoteDampening : MonoBehaviour
     //     else
     //         obj.transform.position = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
     // }
+    
+    public Text inputText;
+    private KeyCode tempKeyCode;
+
+    void OnGUI()
+    {
+        Event e = Event.current;
+        if (e.isKey)
+        {
+            tempKeyCode = e.keyCode;
+            inputText.text = tempKeyCode + "";
+        }
+
+    }
 }
