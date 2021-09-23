@@ -86,4 +86,9 @@ public class ButtonChange : MonoBehaviour
         if (player.GetButtonDown("Touch Click"))
             buttons[currentButton].onClick.Invoke();
     }
+
+    void ButtonCheckable()
+    {
+        buttonCheckable = true;
+    }
 }
