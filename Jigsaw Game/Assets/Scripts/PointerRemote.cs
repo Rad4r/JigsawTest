@@ -125,13 +125,4 @@ public class PointerRemote : MonoBehaviour
     {
         buttonClickCheckable = true;
     }
-
-    // private void RespawnObject(GameObject obj)
-    // {
-    //     if (Random.Range(1, 101) < 50)
-    //         obj.transform.position = new Vector3(Random.Range(5f, 8f), Random.Range(-3.0f, 3.0f), GM.zIndex);
-    //     
-    //     else
-    //         obj.transform.position = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
-    // }
 }

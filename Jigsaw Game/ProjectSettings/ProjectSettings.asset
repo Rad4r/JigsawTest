@@ -133,7 +133,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.5
+  bundleVersion: 1.6
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -157,7 +157,7 @@ PlayerSettings:
   buildNumber:
     Standalone: 0
     iPhone: 1
-    tvOS: 4
+    tvOS: 1
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
@@ -375,27 +375,6 @@ PlayerSettings:
   - m_BuildTarget: tvOS
     m_Icons:
     - m_Textures:
-      - {fileID: 2800000, guid: cde6d89b538c6c940bcf42b9c54ab218, type: 3}
-      - {fileID: 2800000, guid: c5bdfb5c44aa4a34185d20adbf765f70, type: 3}
-      m_Width: 1280
-      m_Height: 768
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
-      - {fileID: 2800000, guid: b856d9bb95a4433488fb3b7a8d11c5ee, type: 3}
-      - {fileID: 2800000, guid: 9bca331b728559b429724e73c5dd0e86, type: 3}
-      m_Width: 800
-      m_Height: 480
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
-      - {fileID: 2800000, guid: 5026e5d3aa38a614d8412ab8004b392d, type: 3}
-      - {fileID: 2800000, guid: 362cfc15f60235f4294c17fec7a3278e, type: 3}
-      m_Width: 400
-      m_Height: 240
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
       - {fileID: 2800000, guid: cb3c1598723d3404e996c5aa5ca727f1, type: 3}
       m_Width: 4640
       m_Height: 1440
@@ -418,6 +397,27 @@ PlayerSettings:
       m_Width: 1920
       m_Height: 720
       m_Kind: 1
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: e063e6508ffe9064f91e96fa8862e7a4, type: 3}
+      - {fileID: 2800000, guid: c5bdfb5c44aa4a34185d20adbf765f70, type: 3}
+      m_Width: 1280
+      m_Height: 768
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: fbbe9613c117a3645a39b23162b2bc66, type: 3}
+      - {fileID: 2800000, guid: 9bca331b728559b429724e73c5dd0e86, type: 3}
+      m_Width: 800
+      m_Height: 480
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: ae7636fd0218e524babfcfa6c5bad9ae, type: 3}
+      - {fileID: 2800000, guid: 362cfc15f60235f4294c17fec7a3278e, type: 3}
+      m_Width: 400
+      m_Height: 240
+      m_Kind: 0
       m_SubKind: 
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsJobs:
