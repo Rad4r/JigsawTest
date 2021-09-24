@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class PointerRemote : MonoBehaviour
 {
-    public float pointerSpeed;
     private GameManager GM;
     private Player player;
     private GameObject currentObject;
@@ -13,10 +12,12 @@ public class PointerRemote : MonoBehaviour
     private bool menuActive;
     private bool movable;
     private Vector3 pointerOffset;
+    private bool buttonClickCheckable;
     void Start()
     {
         GM = FindObjectOfType<GameManager>();
         player = ReInput.players.GetPlayer(0);
+        Invoke("ButtonToCheckable", 2f);
     }
 
     private void Update()
@@ -31,7 +32,7 @@ public class PointerRemote : MonoBehaviour
         if(!menuActive)
             TouchMove();
 
-        if (nearbyObjects.Length >= 1 && !holdingObject && player.GetButtonDown("Touch Click"))
+        if (buttonClickCheckable && nearbyObjects.Length >= 1 && !holdingObject && player.GetButtonDown("Touch Click"))
         {
             if (ClosestObject(nearbyObjects).CompareTag("OpenPiece"))
             {
@@ -118,6 +119,11 @@ public class PointerRemote : MonoBehaviour
         }
 
         return closestObj;
+    }
+
+    private void ButtonToCheckable()
+    {
+        buttonClickCheckable = true;
     }
 
     // private void RespawnObject(GameObject obj)
