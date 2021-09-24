@@ -92,14 +92,13 @@ public class PointerRemoteDampening : MonoBehaviour
         //Input.GetKeyDown(KeyCode.JoystickButton7) D-pad Left
         
         //could disable touch as well
-        UnityEngine.tvOS.Remote.reportAbsoluteDpadValues = true;
         if(player.GetAxis("Drag Horizontal") > 0.9)
             transform.position += Vector3.right * Time.deltaTime * pointerSpeed;
-        if(player.GetAxis("Drag Horizontal") < -0.9)
+        if (Input.GetButton("D Left"))
             transform.position += Vector3.left * Time.deltaTime * pointerSpeed;
-        if(player.GetAxis("Drag Vertical") > 0.9)
+        if(player.GetAxis("Drag Vertical") > 0.9 && player.GetButtonDown("TouchClick"))
             transform.position += Vector3.up * Time.deltaTime * pointerSpeed;
-        if(player.GetAxis("Drag Vertical") < -0.9)
+        if(player.GetAxis("D Down") < -0.9 && player.GetButtonDown("TouchClick"))
             transform.position += Vector3.down * Time.deltaTime * pointerSpeed;
         
         // if (Input.GetButton("D Up"))
@@ -136,7 +135,7 @@ public class PointerRemoteDampening : MonoBehaviour
             }
                 
             if (touch.phase == TouchPhase.Moved)
-                transform.position = positionOffset + new Vector3(touchPosition.x, touchPosition.y,0) * Time.deltaTime * pointerSpeed;
+                transform.position = positionOffset + new Vector3(touchPosition.x, touchPosition.y,0) * Time.deltaTime;
         }
     }
 
@@ -175,18 +174,4 @@ public class PointerRemoteDampening : MonoBehaviour
     //     else
     //         obj.transform.position = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
     // }
-    
-    public Text inputText;
-    private KeyCode tempKeyCode;
-
-    void OnGUI()
-    {
-        Event e = Event.current;
-        if (e.isKey)
-        {
-            tempKeyCode = e.keyCode;
-            inputText.text = tempKeyCode + "";
-        }
-
-    }
 }
