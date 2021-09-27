@@ -582,7 +582,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde4448c83fe2fd40a90d657f2d9885d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointerSpeed: 1.5
   holdingObject: 0
 --- !u!212 &42341521
 SpriteRenderer:
@@ -5766,7 +5765,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5b485bee4ccb11b48a1528c0ff671e75, type: 2}
+  - {fileID: 2100000, guid: 479e135a093008b4eb3542710e19e62c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6002,7 +6001,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.9150943, g: 0.21927728, b: 0.21927728, a: 1}
+      maxColor: {r: 0.8962264, g: 0.20630117, b: 0.20630117, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
