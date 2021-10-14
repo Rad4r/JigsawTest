@@ -20,9 +20,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://D:/bakka/Desk/GD/Block 3/Development Elective/unity stuff/CLASS/AI CHASE TEST/Assets/EnemyEvasion.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Desktop/Jigsaw Game/ExtraJigsaw.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5406a456cf734443b3d02a7d123287f1299290/46/39afa257/Void.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Desktop/Jigsaw Game/ExtraButtonChangeCode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://D:/bakka/Desk/GD/Block 3/Development Elective/unity stuff/CLASS/AI CHASE TEST/Assets/PlayerChase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/af218701fe324032b521ddd91f13662b13b600/18/80bfe497/Remote.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -109,6 +107,8 @@
       <workItem from="1632490885686" duration="1328000" />
       <workItem from="1632494937811" duration="66000" />
       <workItem from="1632727526247" duration="737000" />
+      <workItem from="1633342503337" duration="677000" />
+      <workItem from="1634213326767" duration="206000" />
     </task>
     <servers />
   </component>
