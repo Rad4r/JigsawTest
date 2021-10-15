@@ -21,8 +21,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://D:/bakka/Desk/GD/Block 3/Development Elective/unity stuff/CLASS/AI CHASE TEST/Assets/EnemyEvasion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5406a456cf734443b3d02a7d123287f1299290/46/39afa257/Void.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MenuButtonManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/bakka/Desk/GD/Block 3/Development Elective/unity stuff/CLASS/AI CHASE TEST/Assets/PlayerChase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/af218701fe324032b521ddd91f13662b13b600/18/80bfe497/Remote.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xU2n9bvWuHOaIrTu1wZyYbWUmB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -109,6 +111,9 @@
       <workItem from="1632727526247" duration="737000" />
       <workItem from="1633342503337" duration="677000" />
       <workItem from="1634213326767" duration="206000" />
+      <workItem from="1634223422759" duration="1195000" />
+      <workItem from="1634283350042" duration="1196000" />
+      <workItem from="1634290107726" duration="12977000" />
     </task>
     <servers />
   </component>

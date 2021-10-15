@@ -13,9 +13,11 @@ public class PointerRemote : MonoBehaviour
     private bool movable;
     private Vector3 pointerOffset;
     private bool buttonClickCheckable;
+    private ButtonManager bm;
     void Start()
     {
         GM = FindObjectOfType<GameManager>();
+        bm = FindObjectOfType<ButtonManager>();
         player = ReInput.players.GetPlayer(0);
         Invoke("ButtonToCheckable", 2f);
     }
@@ -36,9 +38,8 @@ public class PointerRemote : MonoBehaviour
         {
             if (ClosestObject(nearbyObjects).CompareTag("OpenPiece"))
             {
-                GetComponent<SpriteRenderer>().enabled = false;
+                //GetComponent<SpriteRenderer>().enabled = false;
                 currentObject = ClosestObject(nearbyObjects).gameObject;
-                currentObject.GetComponent<SpriteRenderer>().color = Color.white;
                 currentObject.GetComponent<SortingGroup>().sortingOrder = GM.zIndex++;
                 GM.PickUpSoundPlay();
                 holdingObject = true;
@@ -52,8 +53,7 @@ public class PointerRemote : MonoBehaviour
         {
             if (player.GetButtonDown("Back Button") || player.GetButtonDown("Menu Button"))
             {
-                GetComponent<SpriteRenderer>().enabled = true;
-                currentObject.GetComponent<SpriteRenderer>().color = Color.gray;
+                //GetComponent<SpriteRenderer>().enabled = true;
                 holdingObject = false;
             }
             else if(currentObject.CompareTag("OpenPiece"))
@@ -66,10 +66,14 @@ public class PointerRemote : MonoBehaviour
         }
         else
         {
-            if (player.GetButtonDown("Back Button") || player.GetButtonDown("Menu Button"))
+            if (!GM.gameWon && player.GetButtonDown("Back Button") || player.GetButtonDown("Menu Button"))
             {
-                if(GM.UIpanel.activeSelf)
+                if (GM.UIpanel.activeSelf)
+                {
                     GM.UIpanel.SetActive(false);
+                    bm.buttonSet = false;
+                }
+                    
                 else
                     GM.UIpanel.SetActive(true);
             }

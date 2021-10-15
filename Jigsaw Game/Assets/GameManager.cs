@@ -17,14 +17,16 @@ public class GameManager : MonoBehaviour
     public AudioClip correctDropOffSound;
     public AudioClip winSound;
     public AudioClip whooshSound;
-    private bool gameWon;
+    public bool gameWon;
     private bool testBool;
+    private ButtonManager bm;
     
     
     private AudioSource audi;
     void Start()
     {
         Remote.allowExitToHome = false;
+        bm = FindObjectOfType<ButtonManager>();
         audi = GetComponent<AudioSource>();
         zIndex = 1;
     }
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour
         starEffect.SetActive(true);
         if (!gameWon)
         {
+            OnContinueClick();
             audi.PlayOneShot(winSound);
             Invoke("WhooshSoundPlay", 2f);
             Invoke("CorrectPieceSoundPlay", 2.5f);
@@ -66,7 +69,7 @@ public class GameManager : MonoBehaviour
 
     void OpenWinUI()
     {
-        remainingText.color = new Color(250, 170, 0); // could change y to -15 for ipmax
+        //remainingText.color = new Color(250, 170, 0); // could change y to -15 for ipmax
         winPanel.SetActive(true);
         winPanel.transform.localScale = Vector3.Lerp(winPanel.transform.localScale, new Vector3(1, 1, 1), Time.deltaTime * 2);
     }
@@ -87,7 +90,7 @@ public class GameManager : MonoBehaviour
         UIpanel.SetActive(false);
         if (!audi.isPlaying)
             PickUpSoundPlay();
-        
+        bm.buttonSet = false;
     }
     
     public void OnBackClick()

@@ -11,17 +11,20 @@ public class MenuScript : MonoBehaviour
 
     public void EasyLevelClick()
     {
-        GetComponent<AudioSource>().Play();
-        SceneManager.LoadScene("Puzzle1");
+        LoadLevel("Puzzle1");
     }
     public void MediumLevelClick()
     {
-        GetComponent<AudioSource>().Play();
-        SceneManager.LoadScene("Puzzle2");
+        LoadLevel("Puzzle2");
     }
     public void HardLevelClick()
     {
+        LoadLevel("Puzzle3");
+    }
+
+    void LoadLevel(string level)
+    {
         GetComponent<AudioSource>().Play();
-        SceneManager.LoadScene("Puzzle3");
+        SceneManager.LoadScene(level);
     }
 }

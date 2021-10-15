@@ -20,7 +20,6 @@ public class ButtonChangePause : MonoBehaviour
         buttonChangeDelay = 0.4f; // could change
         maxButtonChangeAxisLimit = 0.8f;
         player = ReInput.players.GetPlayer(0);
-        Debug.Log(buttons[currentButton].name);
         buttonReset = true;
         defaultScales = new List<Vector3>();
 
@@ -67,11 +66,11 @@ public class ButtonChangePause : MonoBehaviour
     {
         buttons[currentButton].transform.localScale *= 1.2f;
         buttons[currentButton].GetComponent<Animator>().enabled = true;
-        buttons[currentButton].image.color = Color.yellow;
+        buttons[currentButton].image.color = new Color32(27, 129, 255,255);
 
         for (int i = 0; i < buttons.Length; i++)
         {
-            var color = buttons[i].GetComponent<Button>().colors;
+            //var color = buttons[i].GetComponent<Button>().colors;
             if (i != currentButton)
             {
                 buttons[i].transform.localScale = defaultScales[i];

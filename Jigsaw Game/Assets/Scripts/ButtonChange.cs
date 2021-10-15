@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Rewired;
-using UnityEngine.tvOS;
 
 public class ButtonChange : MonoBehaviour
 {
@@ -67,7 +66,7 @@ public class ButtonChange : MonoBehaviour
         Vector3 newVector = Camera.main.ScreenToWorldPoint(new Vector3(0, ret.rect.height * buttons[currentButton].transform.localScale.y, 0)) + Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
         arrow.transform.position = buttons[currentButton].transform.position + newVector + new Vector3(0,0.5f, 0);
         
-        buttons[currentButton].transform.localScale *= 1.2f;
+        buttons[currentButton].transform.localScale *= 1.1f;
 
         for (int i = 0; i < buttons.Length; i++)
         {
