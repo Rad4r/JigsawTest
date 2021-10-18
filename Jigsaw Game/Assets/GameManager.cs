@@ -40,12 +40,12 @@ public class GameManager : MonoBehaviour
 
     void UIUpdate()
     {
-        remainingText.text = "Remaining pieces: " + piecesRemaining;
+        remainingText.text = "Overgebleven stukjes: " + piecesRemaining;
     }
 
     void GameWon()
     {
-        remainingText.text = "Congrats you won!";
+        remainingText.text = "Je hebt gewonnen!";
         starEffect.SetActive(true);
         if (!gameWon)
         {
