@@ -11,7 +11,7 @@ public class MenuScript : MonoBehaviour
 
     public void EasyLevelClick()
     {
-        LoadLevel("Puzzle1");
+        LoadLevel("EasyPuzzleLevels");
     }
     public void MediumLevelClick()
     {

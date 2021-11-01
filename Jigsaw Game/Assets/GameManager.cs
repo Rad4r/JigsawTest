@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
 
     void GameWon()
     {
+        unwantedObjects[2].SetActive(false);
         remainingText.text = "Je hebt gewonnen!";
         starEffect.SetActive(true);
         if (!gameWon)
@@ -98,9 +99,14 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
     
+    public void OnLevelBackClick()
+    {
+        SceneManager.LoadScene("EasyPuzzleLevels");
+    }
+
     public void OnNextClick()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // might need to update
     }
 
     public void CorrectPieceSoundPlay()

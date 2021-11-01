@@ -34,7 +34,7 @@ public class PointerRemote : MonoBehaviour
         if(!menuActive)
             TouchMove();
 
-        if (buttonClickCheckable && nearbyObjects.Length >= 1 && !holdingObject && player.GetButtonDown("Touch Click"))
+        if (buttonClickCheckable && nearbyObjects.Length >= 1 && !holdingObject && player.GetButtonDown("Touch Click")) // check here
         {
             if (ClosestObject(nearbyObjects).CompareTag("OpenPiece"))
             {
@@ -98,7 +98,7 @@ public class PointerRemote : MonoBehaviour
                 transform.position = new Vector3(touchPosition.x, touchPosition.y,0) + pointerOffset;
         }
 
-        //transform.position += new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Time.deltaTime;
+        //transform.position += new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Time.deltaTime * 10f;
     }
 
     private void PointerClamp()

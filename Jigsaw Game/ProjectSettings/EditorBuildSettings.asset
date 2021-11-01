@@ -9,7 +9,22 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: f89185d1c1ecc4f4eb1599002c95db05
   - enabled: 1
-    path: Assets/Scenes/Easy Levels/Puzzle1.unity
+    path: Assets/Scenes/EasyPuzzleLevels.unity
+    guid: 1ea55e080acfe0f4698f970715b1821c
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/PuzzleEasy1.unity
+    guid: 197558a1277d1c641816609244d16e92
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/PuzzleEasy2.unity
+    guid: 13b336923298eac47b0de5934a930369
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/PuzzleEasy3.unity
+    guid: 9b3b3b09c26ff044295cf06e753db632
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/PuzzleEasy4.unity
+    guid: 774fd3ee571300b4d94cf7556c95db0f
+  - enabled: 1
+    path: Assets/Scenes/Easy Levels/PuzzleEasy5.unity
     guid: 06de59c3067fb344d9730627b00a5b02
   - enabled: 1
     path: Assets/Scenes/Puzzle2.unity
