@@ -13,21 +13,11 @@ public class JigsawGenSimple : MonoBehaviour
     private Vector3 startPoint;
     
     private float scaleDistance;
-    private float scaleDistanceX;
-    private float scaleDistanceY;
     
 
-    private float scaleValueX;
-    private float scaleValueY;
     public float defaultScale;
     void Start()
     {
-        float scaleX = (puzzleImage.GetComponent<SpriteRenderer>().sprite.rect.width * puzzleImage.transform.localScale.x) / horizontalPieces;
-        scaleValueX = scaleX / 170;
-        Debug.Log("scaleX : " + scaleValueX);
-        float scaleY = (puzzleImage.GetComponent<SpriteRenderer>().sprite.rect.width * puzzleImage.transform.localScale.y) / verticalPieces;
-        scaleValueY = scaleY / 170;
-        Debug.Log("scaleY : " + scaleValueY);
 
 
         for (int i = 0; i < jigsawPieces.Length; i++)
@@ -36,11 +26,8 @@ public class JigsawGenSimple : MonoBehaviour
             //jigsawPieces[i].transform.GetChild(0).localScale = new Vector3(1, 1, 1);
         }
             
-            
         
         scaleDistance = defaultScale*1.7f; //was 1.7 default
-        scaleDistanceX = scaleValueX * 1.7f;
-        scaleDistanceY = scaleValueY * 1.7f;
         pieces = new List<GameObject>();
         GeneratePuzzle();
     }
