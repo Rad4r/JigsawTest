@@ -32,7 +32,7 @@ public class JigsawGenSimple : MonoBehaviour
 
         for (int i = 0; i < jigsawPieces.Length; i++)
         {
-            jigsawPieces[i].transform.localScale = new Vector3(scaleValueX, scaleY, 1);
+            jigsawPieces[i].transform.localScale = new Vector3(defaultScale, defaultScale, 1);
             //jigsawPieces[i].transform.GetChild(0).localScale = new Vector3(1, 1, 1);
         }
             
