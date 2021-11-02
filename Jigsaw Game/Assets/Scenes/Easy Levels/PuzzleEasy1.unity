@@ -14804,7 +14804,7 @@ GameObject:
   - component: {fileID: 1639417462}
   - component: {fileID: 1639417461}
   m_Layer: 0
-  m_Name: PuzzleComplete
+  m_Name: PuzzleCompletefortyfive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14820,7 +14820,7 @@ Animator:
   m_GameObject: {fileID: 1639417460}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b15fbd0b32678940b8db2c09d04266e, type: 2}
+  m_Controller: {fileID: 9100000, guid: a4bca5229450c6c429aadefe079420b3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
