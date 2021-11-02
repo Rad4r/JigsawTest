@@ -21,9 +21,9 @@ public class PieceScript : MonoBehaviour
         sortGroup = GetComponent<SortingGroup>();
         correctPosition = transform.position;
         if (Random.Range(1, 101) < 50)
-            newPosition = new Vector3(Random.Range(5f, 8f), Random.Range(-3.0f, 3.0f), GM.zIndex);
+            newPosition = new Vector3(Random.Range(5.8f, 8f), Random.Range(-3.0f, 3.0f), GM.zIndex);
         else
-            newPosition = new Vector3(Random.Range(-5f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
+            newPosition = new Vector3(Random.Range(-5.8f, -8f), Random.Range(-3.0f, 2.0f), GM.zIndex);
         
         GetComponent<SortingGroup>().sortingOrder = GM.zIndex;
         GetComponent<SpriteRenderer>().color = Color.gray;
@@ -32,7 +32,7 @@ public class PieceScript : MonoBehaviour
 
     private void Update()
     {
-        Invoke("AnimatePieceMove", 1f);
+        //Invoke("AnimatePieceMove", 1f);
         Invoke("PositionCheck", 2f);
     }
     private void PositionCheck()
