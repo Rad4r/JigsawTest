@@ -27,10 +27,8 @@ public class JigsawGenSimpleTwo : MonoBehaviour
         Vector3 puzzleScale = puzzleImage.transform.localScale;
         float scaleX = (puzzleSprite.rect.width * puzzleScale.x) / horizontalPieces;
         scaleValueX = scaleX / 152;
-        Debug.Log("scaleX : " + scaleValueX);
         float scaleY = (puzzleSprite.rect.height * puzzleScale.y) / verticalPieces;
         scaleValueY = scaleY / 152;
-        Debug.Log("scaleY : " + scaleValueY);
 
 
         // for (int i = 0; i < jigsawPieces.Length; i++)
@@ -52,8 +50,9 @@ public class JigsawGenSimpleTwo : MonoBehaviour
 
         // float halfPointX = ((puzzleSprite.rect.width * puzzleScale.x) / 1.5f)/155;//fix
         // float halfPointY = ((puzzleSprite.rect.width * puzzleScale.y) / 1.5f)/152;//fix
-        float halfPointX = (scaleValueX * (horizontalPieces / 2)) + (scaleValueX*0.55f);
-        float halfPointY = (scaleValueY * (verticalPieces / 2)) + (scaleValueY*1.25f);
+        //float horizonNumb = horizontalPieces - 2;
+        float halfPointX = (scaleValueX*0.87f) + (scaleValueX*0.84f*(horizontalPieces - 2)); // still needs the fix
+        float halfPointY = (scaleValueY*0.87f) + (scaleValueY*0.84f*(verticalPieces - 2));
         startPoint = puzzleImage.transform.position + new Vector3(-halfPointX,halfPointY,0);
         GeneratePuzzle();
     }
