@@ -15,11 +15,11 @@ public class MenuScript : MonoBehaviour
     }
     public void MediumLevelClick()
     {
-        LoadLevel("Puzzle2");
+        LoadLevel("MediumPuzzleLevels");
     }
     public void HardLevelClick()
     {
-        LoadLevel("Puzzle3");
+        LoadLevel("HardPuzzleLevels");
     }
 
     void LoadLevel(string level)

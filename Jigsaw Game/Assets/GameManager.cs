@@ -103,6 +103,16 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("EasyPuzzleLevels");
     }
+    
+    public void OnLevelBackMediumClick()
+    {
+        SceneManager.LoadScene("MediumPuzzleLevels");
+    }
+    
+    public void OnLevelBackHardClick()
+    {
+        SceneManager.LoadScene("HardPuzzleLevels");
+    }
 
     public void OnNextClick()
     {
