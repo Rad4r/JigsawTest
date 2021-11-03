@@ -99,7 +99,7 @@ public class PointerRemote : MonoBehaviour
                 transform.position = new Vector3(touchPosition.x, touchPosition.y,0) + pointerOffset;
         }
 
-        transform.position += new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Time.deltaTime * 10f;
+        //transform.position += new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Time.deltaTime * 10f;
     }
 
     private void PointerClamp()

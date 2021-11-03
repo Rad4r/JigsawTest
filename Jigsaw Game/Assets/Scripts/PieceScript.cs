@@ -60,6 +60,6 @@ public class PieceScript : MonoBehaviour
     private void AnimatePieceMove()
     {
         if(CompareTag("OpenPiece") && transform.position != newPosition && pr.holdingObject == false)
-            transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, newPosition, Time.deltaTime * 20);
     }
 }
