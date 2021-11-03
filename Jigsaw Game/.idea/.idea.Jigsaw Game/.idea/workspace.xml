@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d709ab12-35d1-4d0d-97a3-3f6ceab8c84f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jigsaw Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jigsaw Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PieceScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PieceScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PointerRemote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PointerRemote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SelectedCheck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SelectedCheck.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,6 +121,7 @@
       <workItem from="1635514985775" duration="5785000" />
       <workItem from="1635752393209" duration="13698000" />
       <workItem from="1635926622097" duration="7854000" />
+      <workItem from="1635938329215" duration="639000" />
     </task>
     <servers />
   </component>
@@ -145,6 +141,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
