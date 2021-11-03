@@ -13,6 +13,8 @@ public class PieceScript : MonoBehaviour
     private GameManager GM;
     private Vector3 correctPosition;
     private SortingGroup sortGroup;
+
+    private float speed;
     //private bool moved;
 
     private void Start()
@@ -26,7 +28,8 @@ public class PieceScript : MonoBehaviour
             newPosition = new Vector3(Random.Range(lowerRangeLimit, upperRangeLimit), Random.Range(-3.0f, 3.0f), GM.zIndex); // 5.8f,8f default
         else
             newPosition = new Vector3(Random.Range(-lowerRangeLimit, -upperRangeLimit), Random.Range(-3.0f, 2.0f), GM.zIndex);
-        
+
+        speed = Vector3.Distance(transform.position, newPosition);
         GetComponent<SortingGroup>().sortingOrder = GM.zIndex;
         GetComponent<SpriteRenderer>().color = Color.white;
         GM.zIndex++;
@@ -60,6 +63,6 @@ public class PieceScript : MonoBehaviour
     private void AnimatePieceMove()
     {
         if(CompareTag("OpenPiece") && transform.position != newPosition && pr.holdingObject == false)
-            transform.position = Vector3.MoveTowards(transform.position, newPosition, Time.deltaTime * 20);
+            transform.position = Vector3.MoveTowards(transform.position, newPosition, speed * Time.deltaTime);
     }
 }
