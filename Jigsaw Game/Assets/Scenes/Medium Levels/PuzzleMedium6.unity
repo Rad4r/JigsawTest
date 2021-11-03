@@ -171,6 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1969153
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -381,7 +383,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -542,7 +544,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -683908132222311047, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -600,6 +602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &106736079
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -974,7 +978,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1032,6 +1036,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &138383121
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1242,7 +1248,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -683908132222311047, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1324,7 +1330,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1382,6 +1388,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &167660406
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1732,6 +1740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &175119099
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2362,6 +2372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &258344659
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2654,7 +2666,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -683908132222311047, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2736,7 +2748,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2794,6 +2806,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &278183947
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3086,7 +3100,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -160629372033460883, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3168,7 +3182,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -6661716203716312064, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3627,7 +3641,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3709,7 +3723,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -6661716203716312064, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3767,6 +3781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &439365785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4035,6 +4051,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &453852654
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9271,7 +9289,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9353,7 +9371,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -6661716203716312064, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9411,6 +9429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &503517126
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9737,7 +9757,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9819,7 +9839,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9877,6 +9897,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &589439441
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10215,6 +10237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &599328564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10479,6 +10503,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &624862219
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10665,6 +10691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &634963208
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10975,7 +11003,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11033,6 +11061,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &683097019
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11407,7 +11437,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -6661716203716312064, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11571,7 +11601,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -683908132222311047, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11830,7 +11860,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 341497535}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: OnBackClick
+        m_MethodName: OnLevelBackMediumClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12051,7 +12081,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12133,7 +12163,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -160629372033460883, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12355,6 +12385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &897079732
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12647,7 +12679,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -6661716203716312064, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12705,6 +12737,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &946520606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12915,7 +12949,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -6661716203716312064, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12997,7 +13031,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13137,6 +13171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &995067533
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13429,7 +13465,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -6661716203716312064, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13651,6 +13687,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1059448942
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13837,6 +13875,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1069507220
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14047,7 +14087,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -6661716203716312064, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14211,7 +14251,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14269,6 +14309,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1102390326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14455,6 +14497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1103137992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14641,6 +14685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1110208476
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14851,7 +14897,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -683908132222311047, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15073,6 +15119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1195760674
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15283,7 +15331,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15341,6 +15389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1214605082
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15551,7 +15601,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15633,7 +15683,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -6661716203716312064, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15773,6 +15823,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1255770774
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15959,6 +16011,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1275059956
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16145,6 +16199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1294680604
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16331,6 +16387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1303112766
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16599,6 +16657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1325059497
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16809,7 +16869,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16891,7 +16951,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16973,7 +17033,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17055,7 +17115,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17277,6 +17337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1420160821
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17463,6 +17525,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1425622804
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17825,7 +17889,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17883,6 +17947,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1436405693
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18381,6 +18447,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1513956057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18750,7 +18818,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18843,6 +18911,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1530178297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19053,7 +19123,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -160629372033460883, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19135,7 +19205,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -683908132222311047, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19353,6 +19423,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1589102057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19563,7 +19635,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19703,6 +19775,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1628713770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19971,6 +20045,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1640462681
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20295,7 +20371,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -6661716203716312064, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20377,7 +20453,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -683908132222311047, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -20669,6 +20745,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1778053667
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20855,6 +20933,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1787612252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21147,7 +21227,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -683908132222311047, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21287,6 +21367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1831261492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21497,7 +21579,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -21555,6 +21637,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1859496057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21741,6 +21825,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1859990711
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22009,6 +22095,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &1875890534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22414,7 +22502,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -683908132222311047, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22591,7 +22679,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22673,7 +22761,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 1720449503204227977, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22813,6 +22901,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &2025713715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23095,6 +23185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &2035373911
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23547,6 +23639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &2102191530
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23733,6 +23827,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowerRangeLimit: 4
+  upperRangeLimit: 7.7
 --- !u!61 &2111890256
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24025,7 +24121,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -160629372033460883, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24189,7 +24285,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -683908132222311047, guid: c5ba06890a7f6394fb1b61b0bd4d0a38, type: 3}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

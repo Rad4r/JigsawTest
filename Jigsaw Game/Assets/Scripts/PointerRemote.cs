@@ -56,12 +56,17 @@ public class PointerRemote : MonoBehaviour
                 //GetComponent<SpriteRenderer>().enabled = true;
                 holdingObject = false;
             }
-            else if(currentObject.CompareTag("OpenPiece"))
+            else if (currentObject.CompareTag("OpenPiece"))
+            {
                 currentObject.transform.position = transform.position;
+                GetComponent<SpriteRenderer>().color = new Color32(20, 60, 255, 100);
+            }
+                
             else
             {
                 holdingObject = false;
                 GetComponent<SpriteRenderer>().enabled = true;
+                GetComponent<SpriteRenderer>().color = Color.white;
             }
         }
         else
@@ -69,11 +74,7 @@ public class PointerRemote : MonoBehaviour
             if (!GM.gameWon && player.GetButtonDown("Back Button") || player.GetButtonDown("Menu Button"))
             {
                 if (GM.UIpanel.activeSelf)
-                {
-                    GM.UIpanel.SetActive(false);
-                    bm.buttonSet = false;
-                }
-                    
+                    GM.OnContinueClick();
                 else
                     GM.UIpanel.SetActive(true);
             }
@@ -98,7 +99,7 @@ public class PointerRemote : MonoBehaviour
                 transform.position = new Vector3(touchPosition.x, touchPosition.y,0) + pointerOffset;
         }
 
-        //transform.position += new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Time.deltaTime * 10f;
+        transform.position += new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Time.deltaTime * 10f;
     }
 
     private void PointerClamp()

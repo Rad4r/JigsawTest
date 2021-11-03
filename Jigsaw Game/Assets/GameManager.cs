@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.tvOS;
@@ -92,6 +93,7 @@ public class GameManager : MonoBehaviour
         if (!audi.isPlaying)
             PickUpSoundPlay();
         bm.buttonSet = false;
+        EventSystem.current.SetSelectedGameObject(null);
     }
     
     public void OnBackClick()

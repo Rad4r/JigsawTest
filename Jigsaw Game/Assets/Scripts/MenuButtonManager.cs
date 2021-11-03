@@ -19,7 +19,6 @@ public class MenuButtonManager : MonoBehaviour
 
     private void Update()
     {
-        // }
         UpdateArrowPosition();
     }
 
@@ -28,6 +27,6 @@ public class MenuButtonManager : MonoBehaviour
         GameObject currentButton = EventSystem.current.currentSelectedGameObject;
         arrow.transform.position = currentButton.transform.position + new Vector3(0,currentButton.GetComponent<RectTransform>().rect.height/50,0);
         
-        Debug.Log(currentButton.GetComponent<RectTransform>().rect.height);
+        //Debug.Log(currentButton.GetComponent<RectTransform>().rect.height);
     }
 }

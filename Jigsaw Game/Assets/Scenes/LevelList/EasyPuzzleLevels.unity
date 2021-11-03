@@ -411,6 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 161336241}
   - component: {fileID: 161336242}
+  - component: {fileID: 161336243}
   m_Layer: 0
   m_Name: Level1
   m_TagString: Untagged
@@ -436,7 +437,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -210, y: 57.39999}
+  m_AnchoredPosition: {x: -194, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &161336242
@@ -485,7 +486,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1615515695}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
-        m_MethodName: EasyLevelClick
+        m_MethodName: LevelClick
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -495,6 +496,19 @@ MonoBehaviour:
           m_StringArgument: PuzzleEasy1
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &161336243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161336240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33793b83805ee2748aabe130c496e454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPlayer: {fileID: 1615515697}
 --- !u!1 &161874533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,6 +1768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 807074190}
   - component: {fileID: 807074191}
+  - component: {fileID: 807074192}
   m_Layer: 0
   m_Name: Level5
   m_TagString: Untagged
@@ -1779,7 +1794,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: -130}
+  m_AnchoredPosition: {x: 88, y: -130}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &807074191
@@ -1828,7 +1843,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1615515695}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
-        m_MethodName: EasyLevelClick
+        m_MethodName: LevelClick
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1838,6 +1853,19 @@ MonoBehaviour:
           m_StringArgument: PuzzleEasy5
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &807074192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807074189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33793b83805ee2748aabe130c496e454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPlayer: {fileID: 1615515697}
 --- !u!1 &922238885
 GameObject:
   m_ObjectHideFlags: 0
@@ -2223,6 +2251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1098411802}
   - component: {fileID: 1098411803}
+  - component: {fileID: 1098411804}
   m_Layer: 5
   m_Name: Level3
   m_TagString: Untagged
@@ -2248,7 +2277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 190, y: 56.39999}
+  m_AnchoredPosition: {x: 196, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1098411803
@@ -2297,7 +2326,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1615515695}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
-        m_MethodName: EasyLevelClick
+        m_MethodName: LevelClick
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2307,6 +2336,19 @@ MonoBehaviour:
           m_StringArgument: PuzzleEasy3
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1098411804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098411801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33793b83805ee2748aabe130c496e454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPlayer: {fileID: 1615515697}
 --- !u!1 &1182758042
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,6 +3239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1615515696}
   - component: {fileID: 1615515695}
+  - component: {fileID: 1615515697}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3230,6 +3273,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1615515697
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615515694}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1df0086277a5c8e4e882947b064bb675, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1732564479
 GameObject:
   m_ObjectHideFlags: 0
@@ -3406,6 +3545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1789925668}
   - component: {fileID: 1789925669}
+  - component: {fileID: 1789925670}
   m_Layer: 0
   m_Name: Level2
   m_TagString: Untagged
@@ -3431,7 +3571,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000002861023, y: 55.39999}
+  m_AnchoredPosition: {x: 15.999996, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1789925669
@@ -3480,7 +3620,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1615515695}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
-        m_MethodName: EasyLevelClick
+        m_MethodName: LevelClick
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3490,6 +3630,19 @@ MonoBehaviour:
           m_StringArgument: PuzzleEasy2
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1789925670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789925667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33793b83805ee2748aabe130c496e454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPlayer: {fileID: 1615515697}
 --- !u!1 &1850448523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3866,7 +4019,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1615515695}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
-        m_MethodName: EasyLevelClick
+        m_MethodName: LevelClick
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4301,6 +4454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2081519089}
   - component: {fileID: 2081519090}
+  - component: {fileID: 2081519091}
   m_Layer: 0
   m_Name: Level4
   m_TagString: Untagged
@@ -4327,7 +4481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100.000015, y: -130}
+  m_AnchoredPosition: {x: -62, y: -130}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081519090
@@ -4376,7 +4530,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1615515695}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
-        m_MethodName: EasyLevelClick
+        m_MethodName: LevelClick
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4386,3 +4540,16 @@ MonoBehaviour:
           m_StringArgument: PuzzleEasy4
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2081519091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081519088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33793b83805ee2748aabe130c496e454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPlayer: {fileID: 1615515697}
