@@ -408,7 +408,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 648ab0b990ad28a4f872f1b63e107bc6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0681dd30cfda3bf46819577828d79a8a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -485,4 +485,4 @@ MonoBehaviour:
   horizontalPieces: 6
   verticalPieces: 6
   puzzleImage: {fileID: 1546747633}
-  defaultScale: 0
+  squareWidth: 170

@@ -9,6 +9,8 @@ public class JigsawGenSimpleTwo : MonoBehaviour
     public int horizontalPieces;
     public int verticalPieces;
     public GameObject puzzleImage;
+
+    public float squareWidth;
     //public Sprite
     private List<GameObject> pieces;
     private Vector3 startPoint;
@@ -24,10 +26,10 @@ public class JigsawGenSimpleTwo : MonoBehaviour
     {
         Sprite puzzleSprite = puzzleImage.GetComponent<SpriteRenderer>().sprite;
         Vector3 puzzleScale = puzzleImage.transform.localScale;
-        float scaleX = puzzleSprite.rect.width/ 160 * puzzleScale.x ;
+        float scaleX = puzzleSprite.rect.width/ squareWidth * puzzleScale.x ;
         scaleValueX = scaleX / horizontalPieces; //magic number change
-        float scaleY = (puzzleSprite.rect.height * puzzleScale.y) / verticalPieces;
-        scaleValueY = scaleY / 152;
+        float scaleY = puzzleSprite.rect.height/ squareWidth * puzzleScale.y;
+        scaleValueY = scaleY / verticalPieces;
 
 
         // for (int i = 0; i < jigsawPieces.Length; i++)
