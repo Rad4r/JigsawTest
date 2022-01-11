@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d709ab12-35d1-4d0d-97a3-3f6ceab8c84f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jigsaw Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jigsaw Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/New_Prefabs/Piece1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/New_Prefabs/Piece1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/New_Prefabs/Piece2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/New_Prefabs/Piece2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/New_Prefabs/Piece3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/New_Prefabs/Piece3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/New_Prefabs/Piece4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/New_Prefabs/Piece4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jigsaw Gen3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jigsaw Gen3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JigsawGenSimpleTwo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JigsawGenSimpleTwo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,6 +123,7 @@
       <workItem from="1635938329215" duration="639000" />
       <workItem from="1635939763660" duration="961000" />
       <workItem from="1635949881870" duration="3222000" />
+      <workItem from="1638447087528" duration="1046000" />
     </task>
     <servers />
   </component>
