@@ -351,7 +351,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Moeilijk
+  m_Text: HARD
 --- !u!222 &278364122
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -854,7 +854,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Makkelijk
+  m_Text: EASY
 --- !u!222 &561489660
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1431,7 +1431,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Gemiddeld
+  m_Text: MEDIUM
 --- !u!222 &1377454554
 CanvasRenderer:
   m_ObjectHideFlags: 0
