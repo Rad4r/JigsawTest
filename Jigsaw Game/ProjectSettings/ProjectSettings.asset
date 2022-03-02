@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: YellowRiders
-  productName: JigsawGame
+  productName: JigsawTV
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -399,7 +399,7 @@ PlayerSettings:
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: a59144558b02aef43a66836db1fa7319, type: 3}
+      - {fileID: 2800000, guid: a3a1c3e9a548e9f4eaac19b5b50628a8, type: 3}
       - {fileID: 2800000, guid: a09823810f654ba47a3eb61e3fb63c25, type: 3}
       - {fileID: 2800000, guid: 05e3d4b5b97cae1449e14fa789776aaa, type: 3}
       m_Width: 1280
@@ -407,7 +407,7 @@ PlayerSettings:
       m_Kind: 0
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: a59144558b02aef43a66836db1fa7319, type: 3}
+      - {fileID: 2800000, guid: a3a1c3e9a548e9f4eaac19b5b50628a8, type: 3}
       - {fileID: 2800000, guid: a09823810f654ba47a3eb61e3fb63c25, type: 3}
       - {fileID: 2800000, guid: 05e3d4b5b97cae1449e14fa789776aaa, type: 3}
       m_Width: 800
@@ -415,7 +415,7 @@ PlayerSettings:
       m_Kind: 0
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: a59144558b02aef43a66836db1fa7319, type: 3}
+      - {fileID: 2800000, guid: a3a1c3e9a548e9f4eaac19b5b50628a8, type: 3}
       - {fileID: 2800000, guid: a09823810f654ba47a3eb61e3fb63c25, type: 3}
       - {fileID: 2800000, guid: 05e3d4b5b97cae1449e14fa789776aaa, type: 3}
       m_Width: 400
