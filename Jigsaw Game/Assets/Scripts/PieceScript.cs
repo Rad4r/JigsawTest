@@ -19,6 +19,8 @@ public class PieceScript : MonoBehaviour
 
     private void Start()
     {
+        GetComponent<Collider2D>().enabled = false;
+        Invoke("ResetPiece", 2f);
         movable = true;
         // sorting group set
         GM = FindObjectOfType<GameManager>();
@@ -33,6 +35,11 @@ public class PieceScript : MonoBehaviour
         GetComponent<SortingGroup>().sortingOrder = GM.zIndex;
         GetComponent<SpriteRenderer>().color = Color.white;
         GM.zIndex++;
+    }
+
+    private void ResetPiece()
+    {
+        GetComponent<Collider2D>().enabled = true;
     }
 
     private void Update()

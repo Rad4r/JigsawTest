@@ -26,8 +26,6 @@ public class PieceHandler : MonoBehaviour
             currentPiece.GetComponent<PieceScript>().SetMovable(false);
             PositionCheck();
         }
-            
-        
         // Debug.Log(currentPiece);
     }
     
@@ -52,7 +50,7 @@ public class PieceHandler : MonoBehaviour
                 }
             }
             if (touch.phase == TouchPhase.Moved && currentPiece && currentPiece.tag == "OpenPiece") //not moving
-                currentPiece.position = new Vector2(touchPosition.x, touchPosition.y);
+                currentPiece.position = new Vector2(touchPosition.x, touchPosition.y) + (Vector2.up * currentPiece.localScale.y * 1.5f);
 
             if (touch.phase == TouchPhase.Ended)
             {
@@ -95,11 +93,10 @@ public class PieceHandler : MonoBehaviour
                 highestValue = collisionList[i].transform.position.z;
                 closestObj = collisionList[i];
             }
-                
         }
 
         // if (closestObj.tag == "OpenPiece")
-            return closestObj;
+        return closestObj;
         // return null;
     }
 }
