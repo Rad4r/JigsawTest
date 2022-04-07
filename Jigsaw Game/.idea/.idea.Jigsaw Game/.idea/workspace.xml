@@ -5,10 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jigsaw Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jigsaw Game/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Easy Levels/PuzzleEasy1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Easy Levels/PuzzleEasy1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelList/EasyPuzzleLevels.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelList/EasyPuzzleLevels.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelList/HardPuzzleLevels.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelList/HardPuzzleLevels.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelList/MediumPuzzleLevels.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelList/MediumPuzzleLevels.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PieceScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PieceScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
@@ -130,6 +128,7 @@
       <workItem from="1635949881870" duration="3222000" />
       <workItem from="1638447087528" duration="1046000" />
       <workItem from="1645454040590" duration="476000" />
+      <workItem from="1649318109375" duration="3040000" />
     </task>
     <servers />
   </component>

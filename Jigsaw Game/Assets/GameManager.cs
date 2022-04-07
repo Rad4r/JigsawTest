@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
             PickUpSoundPlay();
         bm.buttonSet = false;
         EventSystem.current.SetSelectedGameObject(null);
-        FindObjectOfType<PointerRemote>().transform.position = Vector3.zero;
+        // FindObjectOfType<PointerRemote>().transform.position = Vector3.zero;
     }
     
     public void OnBackClick()
