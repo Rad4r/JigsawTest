@@ -253,8 +253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &31690579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -602,8 +602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &38458651
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1095,7 +1095,7 @@ Transform:
   m_GameObject: {fileID: 167023455}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 1279047862}
   - {fileID: 1404718111}
@@ -1134,7 +1134,7 @@ Transform:
   - {fileID: 190352092}
   - {fileID: 1491443151}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &190352091
 GameObject:
@@ -1218,149 +1218,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &196254717
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 196254719}
-  - component: {fileID: 196254718}
-  - component: {fileID: 196254720}
-  m_Layer: 0
-  m_Name: ButtonManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &196254718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196254717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4728e2cc8ecc0c42b28af84bc7926f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pausePanel: {fileID: 1935487624}
-  winPanel: {fileID: 340036468}
-  buttonSet: 0
---- !u!4 &196254719
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196254717}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &196254720
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196254717}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c2540211332c44a4984f4d6381a212d1, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &198875239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,8 +1348,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &215107000
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1708,10 +1565,10 @@ Transform:
   m_GameObject: {fileID: 224338107}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.3, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &246386205
 GameObject:
@@ -1761,8 +1618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &246386208
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2338,7 +2195,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5804050005106347705, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5804050005106347705, guid: 09d153d9550a70c4fae7adf8210a1c0e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7542,8 +7399,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &456385797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7796,7 +7653,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &536284796
 GameObject:
@@ -7846,8 +7703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &536284799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8233,7 +8090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33793b83805ee2748aabe130c496e454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioPlayer: {fileID: 196254720}
+  audioPlayer: {fileID: 0}
 --- !u!1 &608804746
 GameObject:
   m_ObjectHideFlags: 0
@@ -8446,8 +8303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &625060031
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8634,8 +8491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &630110026
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8922,8 +8779,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &650660917
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9110,8 +8967,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &698411829
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9462,8 +9319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &752679309
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9732,8 +9589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &756727073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10248,8 +10105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &844666972
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10553,7 +10410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33793b83805ee2748aabe130c496e454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioPlayer: {fileID: 196254720}
+  audioPlayer: {fileID: 0}
 --- !u!1 &848706533
 GameObject:
   m_ObjectHideFlags: 0
@@ -10602,8 +10459,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &848706536
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10790,8 +10647,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &849775775
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10978,8 +10835,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &866531220
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11529,7 +11386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33793b83805ee2748aabe130c496e454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioPlayer: {fileID: 196254720}
+  audioPlayer: {fileID: 0}
 --- !u!1 &947512264
 GameObject:
   m_ObjectHideFlags: 0
@@ -11578,8 +11435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &947512267
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11848,8 +11705,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &976921117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12200,8 +12057,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1010202369
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12388,8 +12245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1020518408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12822,8 +12679,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1096461660
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13256,8 +13113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1204355695
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13608,8 +13465,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1241811644
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14288,8 +14145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1377025291
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14757,7 +14614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33793b83805ee2748aabe130c496e454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioPlayer: {fileID: 196254720}
+  audioPlayer: {fileID: 0}
 --- !u!1 &1437839777
 GameObject:
   m_ObjectHideFlags: 0
@@ -14904,7 +14761,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1471885641
 GameObject:
@@ -14954,8 +14811,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1471885644
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15552,8 +15409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1505502719
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15883,7 +15740,7 @@ Transform:
   - {fileID: 1902534436}
   - {fileID: 1685388654}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1568629217
 GameObject:
@@ -15933,8 +15790,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1568629220
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16098,7 +15955,7 @@ Transform:
   m_GameObject: {fileID: 1588074528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 1241811642}
   - {fileID: 2045373624}
@@ -16137,7 +15994,7 @@ Transform:
   - {fileID: 2085536726}
   - {fileID: 752679307}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1595834924
 GameObject:
@@ -16304,7 +16161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33793b83805ee2748aabe130c496e454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioPlayer: {fileID: 196254720}
+  audioPlayer: {fileID: 0}
 --- !u!1 &1644104450
 GameObject:
   m_ObjectHideFlags: 0
@@ -17041,8 +16898,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1764161545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17229,8 +17086,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1783432488
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17663,8 +17520,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1825339750
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17933,8 +17790,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1855221131
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18400,8 +18257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &1968213261
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18869,7 +18726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33793b83805ee2748aabe130c496e454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioPlayer: {fileID: 196254720}
+  audioPlayer: {fileID: 0}
 --- !u!1 &1983174218
 GameObject:
   m_ObjectHideFlags: 0
@@ -19000,8 +18857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &2005235367
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19188,8 +19045,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &2010857020
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19376,8 +19233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &2045373626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19748,8 +19605,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cae569017ed0ed4989dcd64659eb874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowerRangeLimit: 6
-  upperRangeLimit: 7.7
+  lowerRangeLimit: 5
+  upperRangeLimit: 6
 --- !u!61 &2085536728
 BoxCollider2D:
   m_ObjectHideFlags: 0

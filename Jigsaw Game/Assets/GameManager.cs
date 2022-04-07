@@ -19,13 +19,11 @@ public class GameManager : MonoBehaviour
     public AudioClip whooshSound;
     public bool gameWon;
     private bool testBool;
-    private ButtonManager bm;
     
     
     private AudioSource audi;
     void Start()
     {
-        bm = FindObjectOfType<ButtonManager>();
         audi = GetComponent<AudioSource>();
         zIndex = 1;
     }
@@ -90,7 +88,6 @@ public class GameManager : MonoBehaviour
         UIpanel.SetActive(false);
         if (!audi.isPlaying)
             PickUpSoundPlay();
-        bm.buttonSet = false;
         EventSystem.current.SetSelectedGameObject(null);
         // FindObjectOfType<PointerRemote>().transform.position = Vector3.zero;
     }

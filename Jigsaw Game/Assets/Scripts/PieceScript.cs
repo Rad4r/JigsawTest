@@ -12,7 +12,6 @@ public class PieceScript : MonoBehaviour
     private GameManager GM;
     private Vector3 correctPosition;
     private SortingGroup sortGroup;
-    private Transform currentPiece;
 
     private float speed;
     //private bool moved;
@@ -45,6 +44,7 @@ public class PieceScript : MonoBehaviour
     private void Update()
     {
         Invoke("AnimatePieceMove", 1f);
+        // PositionCheck();
     }
 
     private void AnimatePieceMove() //Check if the piece is being moved
@@ -62,4 +62,22 @@ public class PieceScript : MonoBehaviour
     {
         movable = move;
     }
+    
+    // private void PositionCheck()
+    // {
+    //     if (Vector2.Distance(transform.position, correctPosition) < 0.5f)
+    //     {
+    //         if (!positionSet) // change probably
+    //         {
+    //             tag = "ClosedPiece";
+    //             GetComponent<SpriteRenderer>().color = Color.clear;
+    //             GM.CorrectPieceSoundPlay();
+    //             GM.piecesRemaining--;
+    //             positionSet = true;
+    //         }
+    //         GetComponent<PieceScript>().enabled = false;
+    //         transform.position = correctPosition;
+    //         GetComponent<SortingGroup>().sortingOrder = 0;
+    //     }
+    // }
 }
