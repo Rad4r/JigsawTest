@@ -19,6 +19,7 @@ public class PieceScript : MonoBehaviour
 
     private void Start()
     {
+        movable = true;
         // sorting group set
         GM = FindObjectOfType<GameManager>();
         sortGroup = GetComponent<SortingGroup>();
@@ -37,76 +38,21 @@ public class PieceScript : MonoBehaviour
     private void Update()
     {
         Invoke("AnimatePieceMove", 1f);
-        Invoke("TouchMove",2f);
-        Invoke("PositionCheck", 2f);
-    }
-    
-    private void TouchMove()
-    {
-        if(Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-
-            if (touch.phase == TouchPhase.Began)
-            {
-                Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition); //need to get the top most one
-                // Collider2D touchedCollider = ClosestObject(Physics2D.OverlapPointAll(touchPosition));
-                
-                if(GetComponent<Collider2D>() == touchedCollider)
-                {
-                    movable = true;
-                    sortGroup.sortingOrder = GM.zIndex++;
-                    GM.PickUpSoundPlay();
-                }
-            }
-            if (touch.phase == TouchPhase.Moved && movable && CompareTag("OpenPiece"))
-                transform.position = new Vector2(touchPosition.x, touchPosition.y);
-            
-            if (touch.phase == TouchPhase.Ended)
-                movable = false;
-        }
-    }
-    private void PositionCheck()
-    {
-        if (Vector2.Distance(transform.position, correctPosition) < 0.5f) // change to vector 2
-        {
-            if (!positionSet)
-            {
-                tag = "ClosedPiece";
-                GM.CorrectPieceSoundPlay();
-                GM.piecesRemaining--;
-                sortGroup.sortingOrder = 0;
-                GetComponent<SpriteRenderer>().color = Color.clear;
-                positionSet = true;
-            }
-            GetComponent<PieceScript>().enabled = false;
-            transform.position = correctPosition;
-            sortGroup.sortingOrder = 0;
-        }
     }
 
-    private void AnimatePieceMove()
+    private void AnimatePieceMove() //Check if the piece is being moved
     {
-        if(CompareTag("OpenPiece") && transform.position != newPosition && !movable)
+        if(CompareTag("OpenPiece") && transform.position != newPosition && movable)//not null
             transform.position = Vector3.MoveTowards(transform.position, newPosition, speed * Time.deltaTime);
     }
-    
-    private Collider2D ClosestObject(Collider2D[] collisionList)
-    {
-        float highestValue = 0;
-        Collider2D closestObj = collisionList[0];
-        
-        for (int i = 0; i < collisionList.Length; i++)
-        {
-            if (collisionList[i].transform.position.z >= highestValue)
-            {
-                highestValue = collisionList[i].transform.position.z;
-                closestObj = collisionList[i];
-            }
-                
-        }
 
-        return closestObj;
+    public Vector3 GetCorrectPosition()
+    {
+        return correctPosition;
+    }
+
+    public void SetMovable(bool move)
+    {
+        movable = move;
     }
 }
