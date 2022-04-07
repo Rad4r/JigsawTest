@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.tvOS;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,7 +25,6 @@ public class GameManager : MonoBehaviour
     private AudioSource audi;
     void Start()
     {
-        Remote.allowExitToHome = false;
         bm = FindObjectOfType<ButtonManager>();
         audi = GetComponent<AudioSource>();
         zIndex = 1;

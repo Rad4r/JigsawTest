@@ -1,15 +1,9 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.tvOS;
 
 public class MenuScript : MonoBehaviour
 {
-    private void Start()
-    {
-        Remote.allowExitToHome = true;
-    }
-
     public void EasyLevelClick()
     {
         LoadLevel("EasyPuzzleLevels");
