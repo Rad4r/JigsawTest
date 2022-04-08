@@ -18,6 +18,8 @@ public class PieceScript : MonoBehaviour
 
     private void Start()
     {
+        Vector3 positionLimit = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0)) + Vector3.left * .7f;
+        
         GetComponent<Collider2D>().enabled = false;
         Invoke("ResetPiece", 2f);
         movable = true;
@@ -26,9 +28,9 @@ public class PieceScript : MonoBehaviour
         sortGroup = GetComponent<SortingGroup>();
         correctPosition = transform.position;
         if (Random.Range(1, 101) < 50)
-            newPosition = new Vector3(Random.Range(lowerRangeLimit, upperRangeLimit), Random.Range(-3.0f, 3.0f), GM.zIndex); // 5.8f,8f default
+            newPosition = new Vector3(Random.Range(lowerRangeLimit, positionLimit.x), Random.Range(-3.0f, 3.0f), GM.zIndex); // 5.8f,8f default
         else
-            newPosition = new Vector3(Random.Range(-lowerRangeLimit, -upperRangeLimit), Random.Range(-3.0f, 2.0f), GM.zIndex);
+            newPosition = new Vector3(Random.Range(-lowerRangeLimit, -positionLimit.x), Random.Range(-3.0f, 2.0f), GM.zIndex);
 
         speed = Vector3.Distance(transform.position, newPosition);
         GetComponent<SortingGroup>().sortingOrder = GM.zIndex;
